@@ -1,8 +1,6 @@
 'use client';
 
-import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
 import { getPersonalInfo } from '@/utils/content';
 import InteractiveGrid from '@/components/ui/InteractiveGrid';
 

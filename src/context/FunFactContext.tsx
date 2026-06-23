@@ -50,7 +50,7 @@ export const FunFactProvider: React.FC<{ children: React.ReactNode }> = ({ child
   }, [shownFactIds]);
 
   // Get a random fact that hasn't been shown yet
-  const getRandomFact = () => {
+  const getRandomFact = useCallback(() => {
     const currentShownIds = shownFactIdsRef.current;
     const availableFacts = funFactsData.facts.filter(fact => !currentShownIds.includes(fact.id));
 
@@ -66,10 +66,10 @@ export const FunFactProvider: React.FC<{ children: React.ReactNode }> = ({ child
       fact: availableFacts[Math.floor(Math.random() * availableFacts.length)],
       resetIds: false
     };
-  };
+  }, []);
 
   // Dismiss the current fact
-  const dismissFact = () => {
+  const dismissFact = useCallback(() => {
     setShowFact(false);
 
     // Clear any existing timeout
@@ -82,7 +82,7 @@ export const FunFactProvider: React.FC<{ children: React.ReactNode }> = ({ child
       setCurrentFact(null);
       dismissTimeoutRef.current = null;
     }, 300);
-  };
+  }, []);
 
   // Disable all facts
   const disableAllFacts = () => {
