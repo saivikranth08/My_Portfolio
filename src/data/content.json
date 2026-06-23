@@ -135,7 +135,7 @@
         "Implements structure-aware OCR, hybrid semantic+keyword search, and persistent conversation history",
         "Solves standard RAG limitations through neural reranking and stateful LangGraph workflows"
       ],
-      "image": "/placeholder.jpg",
+      "image": "/images/rag_assistant.png",
       "technologies": ["LangGraph", "FastAPI", "Streamlit", "Qdrant", "PostgreSQL", "LlamaParse", "Groq", "Cohere Rerank"],
       "github": "https://github.com/saivikranth08/Multi-Source-RAG-Assistant",
       "featured": true
@@ -148,7 +148,7 @@
         "Achieves sub-800ms response latency using LiveKit, Deepgram STT, and ElevenLabs TTS",
         "Includes autonomous browser automation and multi-tiered memory system with Web Audio visualizer"
       ],
-      "image": "/placeholder.jpg",
+      "image": "/images/voice_agent.png",
       "technologies": ["LiveKit", "Deepgram", "ElevenLabs", "LangGraph", "Playwright", "PostgreSQL", "Redis", "Docker"],
       "github": "https://github.com/saivikranth08/Multi-threaded-WebRTC-Voice-Agent--Xyra",
       "featured": true
@@ -161,7 +161,7 @@
         "Features stateful intent-routing, dual-layer AST security validation, and sub-2ms Redis caching",
         "Prevents destructive commands at parse level and auto-heals failed queries without user intervention"
       ],
-      "image": "/placeholder.jpg",
+      "image": "/images/text2sql_assistant.png",
       "technologies": ["LangGraph", "FastAPI", "Streamlit", "PostgreSQL", "Redis", "SQLAlchemy", "Docker", "Groq"],
       "github": "https://github.com/saivikranth08/Text2SQL",
       "featured": true
