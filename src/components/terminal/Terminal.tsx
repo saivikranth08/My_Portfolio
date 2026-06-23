@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef, KeyboardEvent } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import TerminalHeader from './TerminalHeader';
 import TerminalPrompt from './TerminalPrompt';
