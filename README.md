@@ -1,4 +1,4 @@
-# Sai Vikranth's Personal Portfolio & Resume Match Analyzer
+# Vikranth's Personal Portfolio & Resume Match Analyzer
 
 An interactive, 3D terminal-themed personal portfolio built with Next.js and Tailwind CSS. It features a fully functional simulated terminal and a **Resume Match Analyzer** powered by the **Groq API** (Llama 3), which allows recruiters to paste a job description and instantly see how well my profile matches their requirements.
 
