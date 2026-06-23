@@ -6,7 +6,7 @@ import { FaGraduationCap, FaLaptopCode, FaEye, FaLightbulb, FaPython, FaHtml5, F
 import { SiPostgresql, SiMysql, SiRedis, SiFastapi, SiHuggingface, SiC, SiStreamlit } from 'react-icons/si';
 import Image from 'next/image';
 import Card3D from '@/components/ui/Card3D';
-import AnimatedHeading from '@/components/ui/AnimatedHeading';
+
 
 // Import content management utilities
 import { getAboutInfo } from '@/utils/content';
