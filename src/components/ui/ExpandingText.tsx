@@ -63,7 +63,7 @@ const ExpandingText: React.FC<ExpandingTextProps> = ({
               backgroundImage: gradientString,
               backgroundSize: '200% 100%',
               backgroundPosition: '0% 50%',
-              WebkitBackgroundClip: 'text',
+              WebkitBackgroundClip: 'text' as any,
               backgroundClip: 'text',
               color: 'transparent', // Start with transparent for gradient effect
               textShadow: 'none',
@@ -79,7 +79,7 @@ const ExpandingText: React.FC<ExpandingTextProps> = ({
             style={{
               // Ensure gradient properties are always applied
               backgroundImage: gradientString,
-              WebkitBackgroundClip: 'text',
+              WebkitBackgroundClip: 'text' as any,
               backgroundClip: 'text',
               color: 'transparent',
             }}
@@ -124,7 +124,7 @@ const ExpandingText: React.FC<ExpandingTextProps> = ({
           backgroundImage: gradientString,
           backgroundSize: '200% 100%',
           backgroundPosition: '0% 50%',
-          WebkitBackgroundClip: 'text',
+          WebkitBackgroundClip: 'text' as any,
           backgroundClip: 'text',
           color: 'currentColor',
           textShadow: 'none',
