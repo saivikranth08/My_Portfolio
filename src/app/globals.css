@@ -1,9 +1,9 @@
+/* Import 3D effects and animations */
+@import '../styles/3d-effects.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Import 3D effects and animations */
-@import '../styles/3d-effects.css';
 
 @keyframes shrink {
   0% {
