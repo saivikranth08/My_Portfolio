@@ -9,7 +9,7 @@ import Card3D from '@/components/ui/Card3D';
 
 
 // Import content management utilities
-import { getAboutInfo } from '@/utils/content';
+import { getAboutInfo, getPersonalInfo } from '@/utils/content';
 
 const SpotlightWrapper = ({ children, glowColor }: { children: React.ReactNode, glowColor: string }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -84,6 +84,7 @@ export default function AboutPage() {
 
   // Get content from the centralized content management system
   const aboutInfo = getAboutInfo();
+  const personalInfo = getPersonalInfo();
   const line1Config = React.useMemo(() => ({ text: aboutInfo.greeting + " ", gradientPart: aboutInfo.name }), [aboutInfo.greeting, aboutInfo.name]);
   const roles = aboutInfo.roles;
 
@@ -318,7 +319,7 @@ export default function AboutPage() {
             {/* Social media links */}
             <div className="flex items-center space-x-4">
               <a
-                href={aboutInfo.github || "https://github.com/saivikranth08"}
+                href={personalInfo.github || "https://github.com/saivikranth08"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-gray-500 hover:text-white transition-colors group text-xs font-semibold"
@@ -329,7 +330,7 @@ export default function AboutPage() {
                 GitHub
               </a>
               <a
-                href={aboutInfo.linkedin || "https://www.linkedin.com/in/vikranthkanuru/"}
+                href={personalInfo.linkedin || "https://www.linkedin.com/in/vikranthkanuru/"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-gray-500 hover:text-white transition-colors group text-xs font-semibold"
