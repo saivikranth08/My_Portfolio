@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import MainLayout from '@/components/layout/MainLayout';
 import { FaGithub, FaCode, FaProjectDiagram } from 'react-icons/fa';
 import Card3D from '@/components/ui/Card3D';
@@ -60,10 +61,21 @@ export default function ProjectsPage() {
                 gradientShadow={false}
                 glowOnHover={false}
               >
-                <div className="h-40 sm:h-48 bg-gradient-to-r from-blue-400/80 to-purple-500/80 dark:from-blue-600/70 dark:to-purple-700/70 relative flex items-center justify-center">
-                  <FaProjectDiagram className="text-white dark:text-gray-100 text-4xl sm:text-6xl opacity-90" />
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-50/20 to-purple-50/20 dark:from-blue-900/30 dark:to-purple-900/30"></div>
-                </div>
+                {project.image ? (
+                  <div className="h-40 sm:h-48 relative w-full overflow-hidden">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform duration-500 hover:scale-110"
+                    />
+                  </div>
+                ) : (
+                  <div className="h-40 sm:h-48 bg-gradient-to-r from-blue-400/80 to-purple-500/80 dark:from-blue-600/70 dark:to-purple-700/70 relative flex items-center justify-center">
+                    <FaProjectDiagram className="text-white dark:text-gray-100 text-4xl sm:text-6xl opacity-90" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-50/20 to-purple-50/20 dark:from-blue-900/30 dark:to-purple-900/30"></div>
+                  </div>
+                )}
 
                 <div className="p-4 sm:p-6 flex-grow">
                   <h3 className="text-lg sm:text-xl font-bold mb-2 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
