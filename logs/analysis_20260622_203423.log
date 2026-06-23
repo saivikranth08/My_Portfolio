@@ -1,0 +1,321 @@
+=== AI RESUME MATCH ANALYSIS LOG - 22/6/2026, 8:34:23 pm ===
+
+[2026-06-22T15:04:23.317Z] 🔍🔍🔍 STARTING JOB DESCRIPTION ANALYSIS 🔍🔍🔍
+[2026-06-22T15:04:23.466Z] Job description length: 289 characters
+[2026-06-22T15:04:23.492Z] 📄📄📄 FULL RESUME CONTEXT BEING SENT TO LLM 📄📄📄
+[2026-06-22T15:04:23.512Z] Sai Vikranth Kanuru
+AI Engineer | Generative AI Specialist
+
+
+DETAILED TECHNICAL SKILLS:
+- Programming Languages: Python, C, SQL (MySQL, PostgreSQL), HTML, CSS
+- Frameworks And Libraries: LangChain, LangGraph, HuggingFace, FastAPI, Streamlit, Playwright, FastMCP
+- Databases And Retrieval: PostgreSQL, MySQL, Redis, Qdrant, FAISS, Chroma
+- Ai Ml Concepts: LLMs, Embeddings, RAG, Prompt Engineering, Speech-to-Text (STT), Text-to-Speech (TTS), Model Context Protocol (MCP), WebRTC
+- Tools: Docker, LangSmith, GitHub
+
+EXPERIENCE:
+AI/ML Projects Developer | Self-Employed | Open Source Contributor
+2024 - Present
+- Built Multi-Source RAG Assistant with advanced OCR, hybrid search, and persistent memory using LangGraph, FastAPI, and PostgreSQL.
+- Developed Multi-Threaded WebRTC Voice Agent achieving sub-800ms latency with LiveKit, Deepgram, and ElevenLabs integration.
+- Created Conversational Text2SQL Assistant with dual-layer SQL security and intelligent query routing using LangGraph.
+- Engineered production-grade systems with Docker containerization, LangSmith monitoring, and comprehensive error handling.
+Skills: LangGraph, FastAPI, Streamlit, PostgreSQL, Redis, Qdrant, Docker, LlamaParse, WebRTC, LiveKit
+
+Student Researcher - AI/ML | MVGR College of Engineering
+2023 - Present
+- Researching state-of-the-art approaches in Retrieval-Augmented Generation (RAG) and agentic AI systems.
+- Developing end-to-end solutions combining NLP, vector search, and LLM inference.
+- Exploring production deployment patterns and performance optimization techniques.
+Skills: Python, LangChain, HuggingFace, FAISS, Chroma, NLP, System Design
+
+EDUCATION:
+B.Tech in Electronics and Communication Engineering
+MVGR College of Engineering | Vizianagaram, Telangana
+GPA: 7.2
+
+Intermediate - Science (MPC)
+Narayana Junior College | Vizianagaram, Telangana
+GPA: 8.72
+
+PROJECTS:
+Multi-Source RAG Assistant
+- Enterprise-grade document assistant enabling users to chat with diverse data sources in plain English
+- Implements structure-aware OCR, hybrid semantic+keyword search, and persistent conversation history
+- Solves standard RAG limitations through neural reranking and stateful LangGraph workflows
+Technologies: LangGraph, FastAPI, Streamlit, Qdrant, PostgreSQL, LlamaParse, Groq, Cohere Rerank
+GitHub: https://github.com/saivikranth08/Multi-Source-RAG-Assistant
+
+Multi-Threaded WebRTC Voice Agent
+- Low-latency AI voice companion with bidirectional WebRTC communication
+- Achieves sub-800ms response latency using LiveKit, Deepgram STT, and ElevenLabs TTS
+- Includes autonomous browser automation and multi-tiered memory system with Web Audio visualizer
+Technologies: LiveKit, Deepgram, ElevenLabs, LangGraph, Playwright, PostgreSQL, Redis, Docker
+GitHub: https://github.com/saivikranth08/Multi-threaded-WebRTC-Voice-Agent--Xyra
+
+Conversational Text2SQL Assistant
+- Natural language SQL query interface with glassmorphic console design
+- Features stateful intent-routing, dual-layer AST security validation, and sub-2ms Redis caching
+- Prevents destructive commands at parse level and auto-heals failed queries without user intervention
+Technologies: LangGraph, FastAPI, Streamlit, PostgreSQL, Redis, SQLAlchemy, Docker, Groq
+GitHub: https://github.com/saivikranth08/Text2SQL
+
+
+[2026-06-22T15:04:23.553Z] 🤖🤖🤖 COMPLETE PROMPT BEING SENT TO LLM 🤖🤖🤖
+[2026-06-22T15:04:23.577Z] 
+    You are an expert AI recruiter specializing in technical roles. You have access to a comprehensive candidate profile including their real work experience, projects, and skills.
+
+    CANDIDATE CONTEXT:
+    
+CANDIDATE PROFILE:
+Name: Sai Vikranth Kanuru
+Titles: AI Engineer, Generative AI Specialist
+Location: Vijayawada, Andhra Pradesh
+Email: kanuruvikranth@gmail.com
+
+PROFESSIONAL SUMMARY:
+B.Tech ECE student with expertise in Generative AI and agentic systems. Specialized in RAG applications, production-grade system design, and end-to-end problem solving. Passionate about building AI solutions that work at scale.
+
+KEY EXPERIENCES:
+- AI/ML Projects Developer at Self-Employed | Open Source Contributor (2024 - Present): Built Multi-Source RAG Assistant with advanced OCR, hybrid search, and persistent memory using LangGraph, FastAPI, and PostgreSQL. Developed Multi-Threaded WebRTC Voice Agent achieving sub-800ms latency with LiveKit, Deepgram, and ElevenLabs integration. Created Conversational Text2SQL Assistant with dual-layer SQL security and intelligent query routing using LangGraph. Engineered production-grade systems with Docker containerization, LangSmith monitoring, and comprehensive error handling.
+- Student Researcher - AI/ML at MVGR College of Engineering (2023 - Present): Researching state-of-the-art approaches in Retrieval-Augmented Generation (RAG) and agentic AI systems. Developing end-to-end solutions combining NLP, vector search, and LLM inference. Exploring production deployment patterns and performance optimization techniques.
+
+NOTABLE PROJECTS:
+- Multi-Source RAG Assistant: Enterprise-grade document assistant enabling users to chat with diverse data sources in plain English Implements structure-aware OCR, hybrid semantic+keyword search, and persistent conversation history Solves standard RAG limitations through neural reranking and stateful LangGraph workflows (Tech: LangGraph, FastAPI, Streamlit, Qdrant, PostgreSQL, LlamaParse, Groq, Cohere Rerank)
+- Multi-Threaded WebRTC Voice Agent: Low-latency AI voice companion with bidirectional WebRTC communication Achieves sub-800ms response latency using LiveKit, Deepgram STT, and ElevenLabs TTS Includes autonomous browser automation and multi-tiered memory system with Web Audio visualizer (Tech: LiveKit, Deepgram, ElevenLabs, LangGraph, Playwright, PostgreSQL, Redis, Docker)
+- Conversational Text2SQL Assistant: Natural language SQL query interface with glassmorphic console design Features stateful intent-routing, dual-layer AST security validation, and sub-2ms Redis caching Prevents destructive commands at parse level and auto-heals failed queries without user intervention (Tech: LangGraph, FastAPI, Streamlit, PostgreSQL, Redis, SQLAlchemy, Docker, Groq)
+
+FULL RESUME DETAILS:
+Sai Vikranth Kanuru
+AI Engineer | Generative AI Specialist
+
+
+DETAILED TECHNICAL SKILLS:
+- Programming Languages: Python, C, SQL (MySQL, PostgreSQL), HTML, CSS
+- Frameworks And Libraries: LangChain, LangGraph, HuggingFace, FastAPI, Streamlit, Playwright, FastMCP
+- Databases And Retrieval: PostgreSQL, MySQL, Redis, Qdrant, FAISS, Chroma
+- Ai Ml Concepts: LLMs, Embeddings, RAG, Prompt Engineering, Speech-to-Text (STT), Text-to-Speech (TTS), Model Context Protocol (MCP), WebRTC
+- Tools: Docker, LangSmith, GitHub
+
+EXPERIENCE:
+AI/ML Projects Developer | Self-Employed | Open Source Contributor
+2024 - Present
+- Built Multi-Source RAG Assistant with advanced OCR, hybrid search, and persistent memory using LangGraph, FastAPI, and PostgreSQL.
+- Developed Multi-Threaded WebRTC Voice Agent achieving sub-800ms latency with LiveKit, Deepgram, and ElevenLabs integration.
+- Created Conversational Text2SQL Assistant with dual-layer SQL security and intelligent query routing using LangGraph.
+- Engineered production-grade systems with Docker containerization, LangSmith monitoring, and comprehensive error handling.
+Skills: LangGraph, FastAPI, Streamlit, PostgreSQL, Redis, Qdrant, Docker, LlamaParse, WebRTC, LiveKit
+
+Student Researcher - AI/ML | MVGR College of Engineering
+2023 - Present
+- Researching state-of-the-art approaches in Retrieval-Augmented Generation (RAG) and agentic AI systems.
+- Developing end-to-end solutions combining NLP, vector search, and LLM inference.
+- Exploring production deployment patterns and performance optimization techniques.
+Skills: Python, LangChain, HuggingFace, FAISS, Chroma, NLP, System Design
+
+EDUCATION:
+B.Tech in Electronics and Communication Engineering
+MVGR College of Engineering | Vizianagaram, Telangana
+GPA: 7.2
+
+Intermediate - Science (MPC)
+Narayana Junior College | Vizianagaram, Telangana
+GPA: 8.72
+
+PROJECTS:
+Multi-Source RAG Assistant
+- Enterprise-grade document assistant enabling users to chat with diverse data sources in plain English
+- Implements structure-aware OCR, hybrid semantic+keyword search, and persistent conversation history
+- Solves standard RAG limitations through neural reranking and stateful LangGraph workflows
+Technologies: LangGraph, FastAPI, Streamlit, Qdrant, PostgreSQL, LlamaParse, Groq, Cohere Rerank
+GitHub: https://github.com/saivikranth08/Multi-Source-RAG-Assistant
+
+Multi-Threaded WebRTC Voice Agent
+- Low-latency AI voice companion with bidirectional WebRTC communication
+- Achieves sub-800ms response latency using LiveKit, Deepgram STT, and ElevenLabs TTS
+- Includes autonomous browser automation and multi-tiered memory system with Web Audio visualizer
+Technologies: LiveKit, Deepgram, ElevenLabs, LangGraph, Playwright, PostgreSQL, Redis, Docker
+GitHub: https://github.com/saivikranth08/Multi-threaded-WebRTC-Voice-Agent--Xyra
+
+Conversational Text2SQL Assistant
+- Natural language SQL query interface with glassmorphic console design
+- Features stateful intent-routing, dual-layer AST security validation, and sub-2ms Redis caching
+- Prevents destructive commands at parse level and auto-heals failed queries without user intervention
+Technologies: LangGraph, FastAPI, Streamlit, PostgreSQL, Redis, SQLAlchemy, Docker, Groq
+GitHub: https://github.com/saivikranth08/Text2SQL
+
+
+
+CANDIDATE PREFERENCES:
+- Work Arrangement: Prefers remote/hybrid work arrangements. Open to on-site work only in Bangalore or Hyderabad.
+- Location Flexibility: Based in India, prefers work-from-home or hybrid setups for optimal work-life balance.
+- Experience Level: Aspiring AI Engineer and student researcher with hands-on project-based experience (no formal years of professional experience, but high-quality practical projects built).
+
+
+    JOB DESCRIPTION:
+    We are seeking a talented Front-End Developer to join our engineering team. You will be responsible for building engaging, responsive, and highly interactive user interfaces. You will work closely with our product management, design, and back-end teams to deliver top-tier web applications
+
+    TASK: Analyze how well this candidate matches the job description using the weighted scoring framework below.
+
+    ANALYSIS FRAMEWORK (Weights):
+    - TECHNICAL SKILLS MATCH (40%): Average match percentage across all job-required skills found in candidate's profile
+    - EXPERIENCE LEVEL MATCH (25%): Alignment between candidate's project-based/academic profile and job requirements
+    - LOCATION & WORK PREFERENCE MATCH (20%): How well job arrangements match candidate preferences
+    - PROJECT PORTFOLIO RELEVANCE (10%): How well projects demonstrate required skills
+    - CULTURAL/ROLE FIT (5%): Overall alignment with role expectations
+
+    SCORING GUIDELINES:
+    Experience Level Matching (candidate is a project-based developer / researcher):
+    - Junior / entry-level roles (0-2 years required): 90-100% match
+    - Mid-level roles (2-4 years required): 65-85% match
+    - Senior roles (5+ years required): 40-60% match
+    - If JD emphasizes potential over experience: 95-100% match
+
+    Work Arrangement Matching:
+    - Remote/hybrid jobs: 90-100% match (+bonus)
+    - On-site in Bangalore/Hyderabad: 70-85% match
+    - On-site outside preferred locations: 30-50% match (-penalty)
+    - Unclear location requirements: 70% default match
+
+    ANALYSIS REQUIREMENTS:
+    1. Extract all technical skills, tools, and technologies from the job description
+    2. Determine experience level requirements from JD (junior/mid/senior or years specified)
+    3. Analyze work arrangement preferences (remote/hybrid/on-site) and location requirements
+    4. For each extracted skill, evaluate match percentage based on candidate's actual experience/projects
+    5. Calculate weighted overall match score
+    6. Include warnings only for significant mismatches:
+       - Experience mismatch: Only if JD requires 4+ years OR candidate experience match <= 80%
+       - Work preference mismatch: Only if job requires on-site outside Bangalore/Hyderabad
+    7. Select 2-4 most relevant project IDs that demonstrate required skills
+
+    Return your analysis in the following JSON format without any markdown formatting or explanations:
+    {
+      "overallMatch": number between 0-100,
+      "matchBreakdown": {
+        "technicalSkills": number between 0-100,
+        "experienceLevel": number between 0-100,
+        "locationPreference": number between 0-100,
+        "projectRelevance": number between 0-100
+      },
+      "warnings": [
+        "Specific warnings only for significant mismatches"
+      ],
+      "skillsMatch": [
+        {
+          "skill": "skill name from job description",
+          "match": number between 0-100,
+          "required": boolean
+        }
+      ],
+      "missingSkills": ["skills required by job but absent from candidate profile"],
+      "candidateSummary": "A 2-3 sentence summary in this exact format: 'Sai Vikranth Kanuru is an AI Engineer and Generative AI Specialist with expertise in [core areas of expertise]. He has worked on various projects, including [specific projects built, e.g. Multi-Source RAG Assistant, Multi-Threaded WebRTC Voice Agent].' Crucial: DO NOT mention numeric years of experience (like '1+ years') in this summary.",
+      "recommendedProjectIds": [1, 2, 3]
+    }
+
+    IMPORTANT: Base analysis strictly on candidate's documented project-based profile. Return ONLY the JSON object.
+  
+[2026-06-22T15:04:23.600Z] ⚠️ No Gemini API key found
+[2026-06-22T15:04:23.621Z] 🔄 Attempting Groq fallback...
+[2026-06-22T15:04:23.644Z] 🔄 Attempting Groq API call...
+[2026-06-22T15:04:24.920Z] ✅ Received response from Groq API
+[2026-06-22T15:04:24.941Z] 🤖🤖🤖 RAW GROQ RESPONSE START 🤖🤖🤖
+[2026-06-22T15:04:24.963Z] {
+  "overallMatch": 34,
+   "matchBreakdown": {
+       "technicalSkills": 20,
+       "experienceLevel": 40,
+       "locationPreference": 80,
+       "projectRelevance": 10
+   },
+   "warnings": [
+       "Experience mismatch: Job requires Front-End Developer experience, but candidate's profile emphasizes AI/ML and Generative AI expertise.",
+       "Work preference mismatch: Not applicable, as job location requirements are unclear."
+   ],
+   "skillsMatch": [
+       {
+           "skill": "Front-end development",
+           "match": 0,
+           "required": true
+       },
+       {
+           "skill": "Responsive and interactive user interfaces",
+           "match": 0,
+           "required": true
+       },
+       {
+           "skill": "Product management",
+           "match": 0,
+           "required": false
+       },
+       {
+           "skill": "Design",
+           "match": 0,
+           "required": false
+       },
+       {
+           "skill": "Back-end teams",
+           "match": 0,
+           "required": false
+       }
+   ],
+   "missingSkills": [
+       "Front-end development frameworks",
+       "UI/UX design",
+       "Web application development"
+   ],
+   "candidateSummary": "Sai Vikranth Kanuru is an AI Engineer and Generative AI Specialist with expertise in Generative AI, RAG applications, and production-grade system design. He has worked on various projects, including Multi-Source RAG Assistant, Multi-Threaded WebRTC Voice Agent. ",
+   "recommendedProjectIds": [
+       "Multi-Source RAG Assistant",
+       "Multi-Threaded WebRTC Voice Agent",
+       "Conversational Text2SQL Assistant"
+   ]
+}
+[2026-06-22T15:04:24.987Z] ✅ Successfully parsed Groq JSON response
+[2026-06-22T15:04:25.012Z] 🎉 Groq analysis complete! Results: {
+  "overallMatch": 34,
+  "matchBreakdown": {
+    "technicalSkills": 20,
+    "experienceLevel": 40,
+    "locationPreference": 80,
+    "projectRelevance": 10
+  },
+  "warnings": [
+    "Experience mismatch: Job requires Front-End Developer experience, but candidate's profile emphasizes AI/ML and Generative AI expertise.",
+    "Work preference mismatch: Not applicable, as job location requirements are unclear."
+  ],
+  "skillsMatch": [
+    {
+      "skill": "Front-end development",
+      "match": 0,
+      "required": true
+    },
+    {
+      "skill": "Responsive and interactive user interfaces",
+      "match": 0,
+      "required": true
+    },
+    {
+      "skill": "Product management",
+      "match": 0,
+      "required": false
+    },
+    {
+      "skill": "Design",
+      "match": 0,
+      "required": false
+    },
+    {
+      "skill": "Back-end teams",
+      "match": 0,
+      "required": false
+    }
+  ],
+  "missingSkills": [
+    "Front-end development frameworks",
+    "UI/UX design",
+    "Web application development"
+  ],
+  "candidateSummary": "Sai Vikranth Kanuru is an AI Engineer and Generative AI Specialist with expertise in Generative AI, RAG applications, and production-grade system design. He has worked on various projects, including Multi-Source RAG Assistant, Multi-Threaded WebRTC Voice Agent. ",
+  "recommendedProjects": []
+}

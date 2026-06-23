@@ -1,0 +1,277 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import 3D effects and animations */
+@import '../styles/3d-effects.css';
+
+@keyframes shrink {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.animate-shrink {
+  animation: shrink 20s linear forwards;
+}
+
+@keyframes slowGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-slow-gradient {
+  background-size: 300% 300%;
+  animation: slowGradient 15s ease infinite;
+}
+
+@keyframes textShine {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+.animate-text-shine {
+  background: linear-gradient(
+    110deg,
+    #9ca3af 20%,
+    #f3f4f6 40%,
+    #f3f4f6 60%,
+    #9ca3af 80%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: textShine 8s linear infinite;
+}
+
+@keyframes skillTagGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.skill-tag-gradient {
+  background: linear-gradient(90deg, #0f172a, #1e3a8a, #1e40af, #1e3a8a, #0f172a);
+  background-size: 300% 100%;
+  animation: skillTagGradient 8s ease infinite;
+  opacity: 0.4;
+}
+
+@layer base {
+  body {
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+
+  h5 {
+    @apply text-lg md:text-xl lg:text-2xl;
+  }
+
+  h6 {
+    @apply text-base md:text-lg lg:text-xl;
+  }
+}
+
+@layer components {
+  .terminal {
+    @apply font-mono bg-gray-800 text-gray-100 p-4 rounded-lg shadow-lg;
+  }
+
+  .terminal-header {
+    @apply flex items-center gap-2 mb-2;
+  }
+
+  .terminal-button {
+    @apply w-3 h-3 rounded-full;
+  }
+
+  .terminal-close {
+    @apply bg-red-500;
+  }
+
+  .terminal-minimize {
+    @apply bg-yellow-500;
+  }
+
+  .terminal-maximize {
+    @apply bg-green-500;
+  }
+
+  .terminal-content {
+    @apply p-2 overflow-auto;
+  }
+
+  .terminal-prompt {
+    @apply text-purple-400;
+  }
+
+  .terminal-cursor {
+    @apply inline-block w-2 h-4 bg-gray-100 ml-1 animate-[blink_1s_step-end_infinite];
+  }
+
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600;
+  }
+
+  .nav-link {
+    @apply relative px-3 py-2 transition-all duration-300 hover:text-purple-600;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 bg-purple-600 transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .section {
+    @apply py-8 sm:py-12 md:py-16 lg:py-24;
+  }
+
+  .card {
+    @apply bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6 transition-all duration-300 hover:shadow-xl;
+  }
+
+  .btn {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-blue-500 text-white hover:bg-blue-600;
+  }
+
+  .btn-secondary {
+    @apply bg-teal-500 text-white hover:bg-teal-600;
+  }
+
+  .btn-accent {
+    @apply bg-purple-600 text-white hover:bg-purple-700;
+  }
+
+  .btn-outline {
+    @apply border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white;
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* 3D Terminal Effects */
+.terminal-3d {
+  transform-style: preserve-3d;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.terminal-3d:hover {
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.4);
+}
+
+/* Custom Scrollbar Styles */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175, 0.5);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(156, 163, 175, 0.8);
+}
+
+.dark .scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(75, 85, 99, 0.5);
+}
+
+.dark .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(75, 85, 99, 0.8);
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+  /* Disable 3D effects on mobile for better performance */
+  .mouse-tracking-3d {
+    transform: none !important;
+  }
+
+  .terminal-3d:hover {
+    transform: translateY(-2px) !important;
+  }
+
+  /* Better touch targets */
+  .btn {
+    @apply px-4 py-3 text-base;
+    min-height: 44px; /* iOS recommended touch target size */
+  }
+
+  /* Improved text sizing for mobile */
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  /* Better spacing for mobile */
+  .container {
+    @apply px-4;
+  }
+
+  /* Mobile-friendly grid adjustments */
+  .grid {
+    @apply gap-4;
+  }
+}

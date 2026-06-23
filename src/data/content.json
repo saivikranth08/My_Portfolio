@@ -1,0 +1,272 @@
+{
+  "personalInfo": {
+    "name": "Sai Vikranth Kanuru",
+    "displayName": "Sai Vikranth",
+    "titles": [
+      "AI Engineer",
+      "Generative AI Specialist"
+    ],
+    "email": "kanuruvikranth@gmail.com",
+    "phone": "+91 9398596589",
+    "location": "Vizianagaram, Andhra Pradesh",
+    "github": "saivikranth08",
+    "linkedin": "vikranthkanuru",
+    "twitter": "",
+    "website": ""
+  },
+
+  "about": {
+    "greeting": "Hello, Myself",
+    "name": "Vikranth",
+    "roles": [
+      { "prefix": "I'm an ", "name": "AI Engineer" },
+      { "prefix": "I'm building ", "name": "Generative AI & Agentic Systems" }
+    ],
+    "bio": [
+      "With a strong passion for AI and emerging technologies, I enjoy building intelligent systems that address real-world challenges. I'm driven by curiosity and continuous learning, exploring new technologies to design effective solutions and create impactful applications."
+    ],
+    "currentlyExploring": [
+      "Agentic AI Systems",
+      "LLM-Based Agents",
+      "Production RAG Architecture"
+    ],
+    "education": "B.Tech ECE, MVGR College of Engineering",
+    "experience": "Building Real-World AI Projects",
+    "technologies": "Proficient in 15+ Technologies"
+  },
+
+  "experience": [
+    {
+      "id": 1,
+      "title": "AI/ML Projects Developer",
+      "company": "Self-Employed | Open Source Contributor",
+      "location": "Remote",
+      "period": "2024 - Present",
+      "description": [
+        "Built Multi-Source RAG Assistant with advanced OCR, hybrid search, and persistent memory using LangGraph, FastAPI, and PostgreSQL.",
+        "Developed Multi-Threaded WebRTC Voice Agent achieving sub-800ms latency with LiveKit, Deepgram, and ElevenLabs integration.",
+        "Created Conversational Text2SQL Assistant with dual-layer SQL security and intelligent query routing using LangGraph.",
+        "Engineered production-grade systems with Docker containerization, LangSmith monitoring, and comprehensive error handling."
+      ],
+      "skills": ["LangGraph", "FastAPI", "Streamlit", "PostgreSQL", "Redis", "Qdrant", "Docker", "LlamaParse", "WebRTC", "LiveKit"]
+    },
+    {
+      "id": 2,
+      "title": "Student Researcher - AI/ML",
+      "company": "MVGR College of Engineering",
+      "location": "Vizianagaram, Telangana",
+      "period": "2023 - Present",
+      "description": [
+        "Researching state-of-the-art approaches in Retrieval-Augmented Generation (RAG) and agentic AI systems.",
+        "Developing end-to-end solutions combining NLP, vector search, and LLM inference.",
+        "Exploring production deployment patterns and performance optimization techniques."
+      ],
+      "skills": ["Python", "LangChain", "HuggingFace", "FAISS", "Chroma", "NLP", "System Design"]
+    }
+  ],
+
+  "education": [
+    {
+      "id": 1,
+      "degree": "B.Tech in Electronics and Communication Engineering",
+      "institution": "MVGR College of Engineering",
+      "location": "Vizianagaram, Telangana",
+      "gpa": "7.2",
+      "achievements": []
+    },
+    {
+      "id": 2,
+      "degree": "Intermediate - Science (MPC)",
+      "institution": "Narayana Junior College",
+      "location": "Vizianagaram, Telangana",
+      "gpa": "8.72",
+      "achievements": []
+    }
+  ],
+
+  "skills": {
+    "programmingLanguages": [
+      { "name": "Python", "icon": "FaPython" },
+      { "name": "C", "icon": "SiC" },
+      { "name": "SQL (MySQL, PostgreSQL)", "icon": "FaDatabase" },
+      { "name": "HTML", "icon": "FaHtml5" },
+      { "name": "CSS", "icon": "FaCss3Alt" }
+    ],
+    "frameworksAndLibraries": [
+      { "name": "LangChain", "icon": "FaLink" },
+      { "name": "LangGraph", "icon": "FaSitemap" },
+      { "name": "HuggingFace", "icon": "SiHuggingface" },
+      { "name": "FastAPI", "icon": "SiFastapi" },
+      { "name": "Streamlit", "icon": "SiStreamlit" },
+      { "name": "Playwright", "icon": "FaRobot" },
+      { "name": "FastMCP", "icon": "FaCode" }
+    ],
+    "databasesAndRetrieval": [
+      { "name": "PostgreSQL", "icon": "SiPostgresql" },
+      { "name": "MySQL", "icon": "SiMysql" },
+      { "name": "Redis", "icon": "SiRedis" },
+      { "name": "Qdrant", "icon": "FaDatabase" },
+      { "name": "FAISS", "icon": "FaSearch" },
+      { "name": "Chroma", "icon": "FaDatabase" }
+    ],
+    "aiMlConcepts": [
+      { "name": "LLMs", "icon": "FaBrain" },
+      { "name": "Embeddings", "icon": "FaVectorSquare" },
+      { "name": "RAG", "icon": "FaBookOpen" },
+      { "name": "Prompt Engineering", "icon": "FaKeyboard" },
+      { "name": "Speech-to-Text (STT)", "icon": "FaMicrophone" },
+      { "name": "Text-to-Speech (TTS)", "icon": "FaVolumeUp" },
+      { "name": "Model Context Protocol (MCP)", "icon": "FaPlug" },
+      { "name": "WebRTC", "icon": "SiWebrtc" }
+    ],
+    "tools": [
+      { "name": "Docker", "icon": "FaDocker" },
+      { "name": "LangSmith", "icon": "FaChartLine" },
+      { "name": "GitHub", "icon": "FaGithub" }
+    ]
+  },
+
+  "projects": [
+    {
+      "id": 1,
+      "title": "Multi-Source RAG Assistant",
+      "description": [
+        "Enterprise-grade document assistant enabling users to chat with diverse data sources in plain English",
+        "Implements structure-aware OCR, hybrid semantic+keyword search, and persistent conversation history",
+        "Solves standard RAG limitations through neural reranking and stateful LangGraph workflows"
+      ],
+      "image": "/placeholder.jpg",
+      "technologies": ["LangGraph", "FastAPI", "Streamlit", "Qdrant", "PostgreSQL", "LlamaParse", "Groq", "Cohere Rerank"],
+      "github": "https://github.com/saivikranth08/Multi-Source-RAG-Assistant",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Multi-Threaded WebRTC Voice Agent",
+      "description": [
+        "Low-latency AI voice companion with bidirectional WebRTC communication",
+        "Achieves sub-800ms response latency using LiveKit, Deepgram STT, and ElevenLabs TTS",
+        "Includes autonomous browser automation and multi-tiered memory system with Web Audio visualizer"
+      ],
+      "image": "/placeholder.jpg",
+      "technologies": ["LiveKit", "Deepgram", "ElevenLabs", "LangGraph", "Playwright", "PostgreSQL", "Redis", "Docker"],
+      "github": "https://github.com/saivikranth08/Multi-threaded-WebRTC-Voice-Agent--Xyra",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Conversational Text2SQL Assistant",
+      "description": [
+        "Natural language SQL query interface with glassmorphic console design",
+        "Features stateful intent-routing, dual-layer AST security validation, and sub-2ms Redis caching",
+        "Prevents destructive commands at parse level and auto-heals failed queries without user intervention"
+      ],
+      "image": "/placeholder.jpg",
+      "technologies": ["LangGraph", "FastAPI", "Streamlit", "PostgreSQL", "Redis", "SQLAlchemy", "Docker", "Groq"],
+      "github": "https://github.com/saivikranth08/Text2SQL",
+      "featured": true
+    }
+  ],
+
+  "resume": {
+    "summary": "B.Tech ECE student with expertise in Generative AI and agentic systems. Specialized in RAG applications, production-grade system design, and end-to-end problem solving. Passionate about building AI solutions that work at scale.",
+    "skills": {
+      "languages": "Python, JavaScript, SQL, HTML, CSS, C",
+      "aiFrameworks": "LangChain, LangGraph, HuggingFace, FastAPI, Streamlit",
+      "databases": "PostgreSQL, MySQL, Redis, Qdrant, FAISS, Chroma",
+      "aiml": "LLMs, Embeddings, RAG, Prompt Engineering, Speech-to-Text, Text-to-Speech",
+      "devOps": "Docker, LangSmith, GitHub"
+    }
+  },
+
+  "terminal": {
+    "welcomeMessage": "Welcome to Sai Vikranth's Terminal Portfolio!",
+    "helpText": "Type help to see available commands.",
+    "themeText": "Use the OS icons in the top-right corner to change the terminal theme.",
+    "prompts": {
+      "windows": "C:\\Users\\sai>",
+      "mac": "sai@macbook ~ %",
+      "linux": "sai@ubuntu:~$"
+    },
+    "titles": {
+      "windows": "Command Prompt",
+      "mac": "zsh",
+      "linux": "bash"
+    },
+    "featuredProjects": [
+      "Multi-Source RAG Assistant",
+      "WebRTC Voice Agent",
+      "Text2SQL Conversational Interface"
+    ]
+  },
+
+  "contact": {
+    "heading": "Get in Touch",
+    "subheading": "Have a question or want to collaborate on an AI project? Feel free to reach out!",
+    "availability": [
+      "Internship opportunities",
+      "AI/ML projects",
+      "Freelance work",
+      "Open-source contributions"
+    ],
+    "formLabels": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  },
+
+  "meta": {
+    "title": "Sai Vikranth Kanuru | AI Engineer",
+    "description": "Portfolio of Sai Vikranth, an AI Engineer building Generative AI and agentic systems with a focus on RAG applications.",
+    "keywords": ["portfolio", "AI engineer", "generative AI", "RAG", "agentic systems"]
+  },
+
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+
+  "footer": {
+    "description": "AI Engineer building production-grade Generative AI and agentic systems with a focus on RAG applications.",
+    "quickLinks": {
+      "title": "Quick Links",
+      "links": [
+        { "name": "Home", "href": "/" },
+        { "name": "About", "href": "/about" },
+        { "name": "Experience", "href": "/experience" },
+        { "name": "Projects", "href": "/projects" },
+        { "name": "Skills", "href": "/skills" },
+        { "name": "Contact", "href": "/contact" },
+        { "name": "Resume", "href": "/resume" }
+      ]
+    },
+    "contactSection": {
+      "title": "Contact",
+      "email": "kanuruvikranth@gmail.com",
+      "location": "Vizianagaram, Andhra Pradesh, India",
+      "availability": "Available for internship and full-time opportunities"
+    },
+    "socialLinks": {
+      "github": "https://github.com/saivikranth08",
+      "linkedin": "https://www.linkedin.com/in/vikranthkanuru/",
+      "twitter": "",
+      "email": "kanuruvikranth@gmail.com"
+    },
+    "copyright": "All rights reserved."
+  },
+
+  "loading": {
+    "title": "Sai Vikranth's Portfolio",
+    "message": "Loading terminal environment...",
+    "refreshText": "If the page doesn't load automatically, please click the button below.",
+    "refreshButton": "Refresh Page"
+  }
+}
