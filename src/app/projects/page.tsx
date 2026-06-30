@@ -12,13 +12,11 @@ import SkillTag3D from '@/components/ui/SkillTag3D';
 import AnimatedHeading from '@/components/ui/AnimatedHeading';
 
 // Import content management utilities
-import { getProjects, getFeaturedProjects } from '@/utils/content';
+import { getFeaturedProjects } from '@/utils/content';
 
 export default function ProjectsPage() {
   // Get projects from the centralized content management system
-  const projects = getProjects();
   const featuredProjects = getFeaturedProjects();
-  const otherProjects = projects.filter(project => !project.featured);
 
   return (
     <MainLayout>
@@ -120,73 +118,7 @@ export default function ProjectsPage() {
           </div>
         </div>
 
-        {/* Other Projects */}
-        <div>
-          <div className="text-center mb-6 sm:mb-8">
-            <AnimatedHeading
-              as="h2"
-              className="text-2xl sm:text-3xl lg:text-4xl font-bold inline-block"
-              staggerLetters={true}
-              underlineWidth={0}
-              gradientColors={['#3b82f6', '#8b5cf6']}
-            >
-              Other Projects
-            </AnimatedHeading>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {otherProjects.map(project => (
-              <Card3D
-                key={project.id}
-                className="p-4 sm:p-6 flex flex-col h-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100"
-                hoverScale={1.02}
-                mouseIntensity={0}
-                gradientShadow={false}
-                glowOnHover={false}
-              >
-                <div className="flex items-center mb-4">
-                  <FaCode className="text-accent text-xl sm:text-2xl mr-3 floating" />
-                  <h3 className="text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-                    {project.title}
-                  </h3>
-                </div>
 
-                <ul className="text-gray-700 dark:text-gray-300 mb-4 flex-grow space-y-1">
-                  {project.description.map((point, index) => (
-                    <li key={index} className="flex items-start">
-                      <span className="text-accent mr-2 mt-1 text-sm">•</span>
-                      <span className="text-sm">{point}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="mb-4 max-h-16 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 dark:scrollbar-thumb-gray-600 scrollbar-track-transparent">
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, index) => (
-                      <SkillTag3D
-                        key={index}
-                        className="text-xs"
-                      >
-                        {tech}
-                      </SkillTag3D>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="flex justify-center">
-                  <Button3D
-                    href={project.github}
-                    variant="outline"
-                    size="sm"
-                    icon={<FaGithub />}
-                    className="bg-transparent"
-                  >
-                    Code
-                  </Button3D>
-                </div>
-              </Card3D>
-            ))}
-          </div>
-        </div>
 
         <div className="text-center mt-12 sm:mt-16">
           <AnimatedHeading
