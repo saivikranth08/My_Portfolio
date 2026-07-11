@@ -131,9 +131,9 @@
       "id": 1,
       "title": "Multi-Source RAG Assistant",
       "description": [
-        "Enterprise-grade document assistant enabling users to chat with diverse data sources in plain English",
-        "Implements structure-aware OCR, hybrid semantic+keyword search, and persistent conversation history",
-        "Solves standard RAG limitations through neural reranking and stateful LangGraph workflows"
+        "Enterprise-grade document assistant that lets users chat with PDFs, websites, and scanned files in plain English.",
+        "Achieves highly accurate, hallucination-free answers using hybrid search and Cohere neural reranking.",
+        "Powered by stateful LangGraph workflows, PostgreSQL memory, and LlamaParse OCR."
       ],
       "image": "/images/rag_assistant.png",
       "technologies": ["LangGraph", "FastAPI", "Streamlit", "Qdrant", "PostgreSQL", "LlamaParse", "Groq", "Cohere Rerank"],
@@ -144,9 +144,9 @@
       "id": 2,
       "title": "Multi-Threaded WebRTC Voice Agent",
       "description": [
-        "Low-latency AI voice companion with bidirectional WebRTC communication",
-        "Achieves sub-800ms response latency using LiveKit, Deepgram STT, and ElevenLabs TTS",
-        "Includes autonomous browser automation and multi-tiered memory system with Web Audio visualizer"
+        "Ultra-low-latency AI voice companion featuring real-time, bidirectional WebRTC communication.",
+        "Orchestrates LiveKit, Deepgram STT, and LLaMA 3.3 to achieve incredible sub-800ms human-like response times.",
+        "Features autonomous browser control and a stunning 3D holographic Web Audio visualizer."
       ],
       "image": "/images/voice_agent.png",
       "technologies": ["LiveKit", "Deepgram", "ElevenLabs", "LangGraph", "Playwright", "PostgreSQL", "Redis", "Docker"],
@@ -157,9 +157,9 @@
       "id": 3,
       "title": "Conversational Text2SQL Assistant",
       "description": [
-        "Natural language SQL query interface with glassmorphic console design",
-        "Features stateful intent-routing, dual-layer AST security validation, and sub-2ms Redis caching",
-        "Prevents destructive commands at parse level and auto-heals failed queries without user intervention"
+        "An intelligent interface that instantly translates natural language questions into complex SQL queries.",
+        "Features self-healing query execution and AST security layers to completely block destructive database commands.",
+        "Optimized for extreme speed with Redis caching, connection pooling, and live LangSmith telemetry."
       ],
       "image": "/images/text2sql_assistant.png",
       "technologies": ["LangGraph", "FastAPI", "Streamlit", "PostgreSQL", "Redis", "SQLAlchemy", "Docker", "Groq"],
