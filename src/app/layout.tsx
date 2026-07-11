@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
+import { Analytics } from "@vercel/analytics/next";
 
 import { FunFactProvider } from "@/context/FunFactContext";
 import FunFactToast from "@/components/ui/FunFactToast";
@@ -38,6 +39,7 @@ export default function RootLayout({
             {children}
             <FunFactToast />
           </FunFactProvider>
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
