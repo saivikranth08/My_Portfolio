@@ -345,7 +345,7 @@ export default function AboutPage() {
 
           {/* Right Image Column */}
           <div className="order-1 md:order-2 flex justify-center md:justify-end md:items-start h-full perspective-1000">
-            <div className="relative w-80 h-[28rem] md:w-[450px] md:h-[550px] group">
+            <div className="relative w-64 h-[22rem] md:w-[320px] md:h-[400px] group mt-4 md:mt-0">
               <Image
                 src="/images/Vicky_AI.jpg"
                 alt="Vikranth's Profile"
