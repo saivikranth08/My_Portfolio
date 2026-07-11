@@ -347,7 +347,7 @@ export default function AboutPage() {
           <div className="order-1 md:order-2 flex justify-center md:justify-center md:items-start h-full perspective-1000">
             <div className="relative w-64 h-[22rem] md:w-[320px] md:h-[400px] group mt-4 md:mt-0">
               <Image
-                src="/images/Vicky_AI.png"
+                src="/images/Vicky_AI.jpg"
                 alt="Vikranth's Profile"
                 fill
                 style={{ 
