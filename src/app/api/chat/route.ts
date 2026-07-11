@@ -2,10 +2,10 @@ import { NextResponse } from 'next/server';
 
 export async function POST(req: Request) {
   try {
-    const { message } = await req.json();
+    const { messages } = await req.json();
 
-    if (!message) {
-      return NextResponse.json({ error: 'Message is required' }, { status: 400 });
+    if (!messages || !Array.isArray(messages)) {
+      return NextResponse.json({ error: 'Messages array is required' }, { status: 400 });
     }
 
     // Get the Python backend URL from environment variables, fallback to localhost for development
@@ -17,7 +17,7 @@ export async function POST(req: Request) {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ message }),
+      body: JSON.stringify({ messages }),
     });
 
     if (!response.ok) {

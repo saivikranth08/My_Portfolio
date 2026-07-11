@@ -38,15 +38,20 @@ export default function Chatbot() {
     
     // Add user message to UI
     const newUserMsg: Message = { id: Date.now().toString(), role: 'user', content: userMessage };
-    setMessages((prev) => [...prev, newUserMsg]);
+    const newMessages = [...messages, newUserMsg];
+    setMessages(newMessages);
     setIsTyping(true);
 
     try {
       // Send to Next.js API Route (which forwards to Python Backend)
+      // Send the entire conversation history (excluding the first generic greeting to save tokens, or include it all)
+      // We will slice(1) to ignore the hardcoded initial greeting, keeping the context clean.
+      const chatHistory = newMessages.slice(1).map(m => ({ role: m.role, content: m.content }));
+      
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: userMessage }),
+        body: JSON.stringify({ messages: chatHistory }),
       });
 
       if (!res.ok) throw new Error('API Error');
@@ -127,7 +132,7 @@ export default function Chatbot() {
                   key={msg.id}
                   className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
                 >
-                  <div className={`max-w-[85%] rounded-2xl px-4 py-2 text-sm shadow-md ${
+                  <div className={`max-w-[85%] rounded-2xl px-4 py-2 text-sm shadow-md whitespace-pre-wrap ${
                     msg.role === 'user' 
                       ? 'bg-blue-600 text-white rounded-br-none' 
                       : 'bg-gray-800 border border-gray-700 text-gray-200 rounded-bl-none'
