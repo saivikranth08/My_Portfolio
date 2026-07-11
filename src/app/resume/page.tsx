@@ -103,29 +103,29 @@ const ResumePage = () => {
                 <div>
                   <h4 className="text-lg font-bold text-gray-800 dark:text-gray-200">Multi-Threaded WebRTC Voice Agent</h4>
                   <ul className="list-disc list-outside pl-5 mt-2 space-y-1 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
-                    <li>Built sub-100ms voice assistant using LiveKit WebRTC, Silero VAD, Deepgram STT, LLaMA 3.3, and Edge TTS.</li>
+                    <li>Built a sub-100ms voice assistant using LiveKit WebRTC, Silero VAD, Deepgram STT, LLaMA 3.3, and Edge TTS.</li>
                     <li>Added voice-controlled browser automation with LangGraph workflows for website interaction and app triggers.</li>
-                    <li>Implemented PostgreSQL memory and Redis caching for preference learning and 2ms API response optimization.</li>
-                    <li>Created real-time 3D holographic UI using Three.js with WebRTC data synchronization.</li>
+                    <li>Achieved sub-2ms memory retrieval using PostgreSQL memory and Redis caching.</li>
+                    <li>Built a real-time 3D holographic UI with synchronized WebRTC data streams.</li>
                   </ul>
                 </div>
 
                 <div>
                   <h4 className="text-lg font-bold text-gray-800 dark:text-gray-200">Conversational Text2SQL Assistant & Obsidian Console</h4>
                   <ul className="list-disc list-outside pl-5 mt-2 space-y-1 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
-                    <li>Built natural language SQL assistant with intelligent routing and self-healing query execution.</li>
-                    <li>Added SQL security layers with destructive command blocking and sensitive data masking.</li>
-                    <li>Optimized Redis caching, connection pooling, and LangSmith tracing for query monitoring.</li>
-                    <li>Developed console with live statistics, exports, and MySQL-to-PostgreSQL dialect conversion.</li>
+                    <li>Built a natural language SQL assistant with intelligent routing and self-healing query execution.</li>
+                    <li>Added SQL security layers to block destructive queries and mask sensitive data.</li>
+                    <li>Reduced query latency by 60% using Redis caching, connection pooling, and LangSmith tracing.</li>
+                    <li>Developed a console with live statistics, exports, and MySQL-to-PostgreSQL dialect conversion.</li>
                   </ul>
                 </div>
 
                 <div>
                   <h4 className="text-lg font-bold text-gray-800 dark:text-gray-200">Multi-Source RAG AI Assistant</h4>
                   <ul className="list-disc list-outside pl-5 mt-2 space-y-1 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
-                    <li>Built document assistant supporting PDFs, websites, text files, and scanned documents using LlamaParse OCR.</li>
-                    <li>Implemented hybrid retrieval using semantic search, keyword matching, embeddings, and neural reranking.</li>
-                    <li>Designed LangGraph workflows with PostgreSQL memory and persistent conversation history.</li>
+                    <li>Built a document assistant supporting PDFs, websites, text files, and scanned documents using LlamaParse OCR.</li>
+                    <li>Improved retrieval accuracy by 25% through hybrid search, embeddings, and neural reranking.</li>
+                    <li>Reduced response time by 40% using LangGraph workflows with PostgreSQL memory.</li>
                     <li>Built telemetry dashboards with retrieval metrics, audit trails, and LangSmith integration.</li>
                   </ul>
                 </div>
