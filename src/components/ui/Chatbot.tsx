@@ -16,7 +16,7 @@ export default function Chatbot() {
     {
       id: '1',
       role: 'ai',
-      content: "Hi! I'm Sai's AI assistant. Feel free to ask me anything about his experience, projects, or education!",
+      content: "Hi! I'm Vikranth's AI assistant. Feel free to ask me anything about his experience, projects, or education!",
     },
   ]);
   const [input, setInput] = useState('');
@@ -103,7 +103,7 @@ export default function Chatbot() {
                   <FaRobot size={18} />
                 </div>
                 <div>
-                  <h3 className="text-gray-100 font-semibold text-sm">Sai AI Assistant</h3>
+                  <h3 className="text-gray-100 font-semibold text-sm">Vikranth AI Assistant</h3>
                   <div className="flex items-center gap-1.5 text-xs text-gray-400">
                     <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
                     Online
