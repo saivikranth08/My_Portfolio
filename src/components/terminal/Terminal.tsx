@@ -331,7 +331,7 @@ const Terminal: React.FC = () => {
               <p className="border-b border-gray-600 mb-2"></p>
               <p className="font-bold">B.Tech – Electronics and Communication Engineering</p>
               <p>MVGR College of Engineering, Vizianagaram | Expected May 2028</p>
-              <p className="mb-2">CGPA: 7.2</p>
+              <p className="mb-2">CGPA: 7.06</p>
 
               <p className="font-bold">Intermediate – Science (MPC)</p>
               <p>Narayana Junior College, Vizianagaram | May 2024</p>

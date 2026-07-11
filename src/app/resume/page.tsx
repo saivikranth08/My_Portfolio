@@ -145,7 +145,7 @@ const ResumePage = () => {
                   </div>
                   <div className="sm:text-right mt-1 sm:mt-0 text-sm text-gray-600 dark:text-gray-400">
                     <p>Expected May 2028</p>
-                    <p className="font-semibold">CGPA: 7.2</p>
+                    <p className="font-semibold">CGPA: 7.06</p>
                   </div>
                 </div>
 
