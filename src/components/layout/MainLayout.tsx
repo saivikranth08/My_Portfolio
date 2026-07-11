@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
+import Chatbot from '../ui/Chatbot';
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -49,6 +50,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
           WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 20%, rgba(0,0,0,0))'
         }}
       />
+      <Chatbot />
     </div>
   );
 };
