@@ -353,8 +353,8 @@ export default function AboutPage() {
                 style={{ 
                   objectFit: 'contain', 
                   objectPosition: 'bottom',
-                  WebkitMaskImage: 'radial-gradient(ellipse at center, black 75%, transparent 100%)',
-                  maskImage: 'radial-gradient(ellipse at center, black 75%, transparent 100%)'
+                  WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)',
+                  maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)'
                 }}
                 className="transition-all duration-500 ease-out group-hover:-translate-y-4 group-hover:scale-105 group-hover:drop-shadow-[0_25px_35px_rgba(168,85,247,0.4)] cursor-pointer"
               />
