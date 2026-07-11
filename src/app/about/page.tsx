@@ -235,7 +235,7 @@ export default function AboutPage() {
     <MainLayout>
       <section className="section container mx-auto px-4 pt-12 md:pt-24">
         {/* Main Split Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-16">
           {/* Left Text Column */}
           <div className="order-2 md:order-1 flex flex-col items-start text-left">
             <div className="mb-6">
@@ -344,7 +344,7 @@ export default function AboutPage() {
           </div>
 
           {/* Right Image Column */}
-          <div className="order-1 md:order-2 flex justify-center md:justify-center md:items-center h-full perspective-1000">
+          <div className="order-1 md:order-2 flex justify-center md:justify-center md:items-start h-full perspective-1000">
             <div className="relative w-64 h-[22rem] md:w-[320px] md:h-[400px] group mt-4 md:mt-0">
               <Image
                 src="/images/Vicky_AI.jpg"
@@ -352,11 +352,9 @@ export default function AboutPage() {
                 fill
                 style={{ 
                   objectFit: 'contain', 
-                  objectPosition: 'bottom',
-                  WebkitMaskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)',
-                  maskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)'
+                  objectPosition: 'bottom'
                 }}
-                className="mix-blend-lighten filter brightness-110 contrast-125 transition-all duration-500 ease-out group-hover:-translate-y-4 group-hover:scale-105 group-hover:drop-shadow-[0_25px_35px_rgba(168,85,247,0.4)] cursor-pointer"
+                className="transition-all duration-500 ease-out group-hover:-translate-y-4 group-hover:scale-105 group-hover:drop-shadow-[0_25px_35px_rgba(168,85,247,0.4)] cursor-pointer"
               />
             </div>
           </div>
