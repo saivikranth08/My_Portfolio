@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import MainLayout from '@/components/layout/MainLayout';
-import { FaGraduationCap, FaLaptopCode, FaEye, FaLightbulb, FaPython, FaHtml5, FaCss3Alt, FaDocker, FaGithub, FaBrain, FaRobot, FaLinkedin, FaBriefcase } from 'react-icons/fa';
+import { FaGraduationCap, FaLaptopCode, FaEye, FaLightbulb, FaPython, FaHtml5, FaCss3Alt, FaDocker, FaGithub, FaBrain, FaRobot, FaLinkedin, FaBriefcase, FaDatabase } from 'react-icons/fa';
 import { SiPostgresql, SiMysql, SiRedis, SiFastapi, SiHuggingface, SiC, SiStreamlit } from 'react-icons/si';
 import Image from 'next/image';
 import Card3D from '@/components/ui/Card3D';
