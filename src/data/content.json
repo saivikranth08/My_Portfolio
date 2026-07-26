@@ -145,16 +145,16 @@
     },
     {
       "id": 2,
-      "title": "Multi-Threaded WebRTC Voice Agent",
+      "title": "GitHub Autonomous PR Review Agent",
       "description": [
-        "Ultra-low-latency AI voice companion platform featuring real-time, bidirectional WebRTC streaming for seamless conversational experiences.",
-        "Orchestrating LiveKit, Deepgram STT, and LLaMA 3.3 to achieve sub-800ms human-like voice response times.",
-        "Driving engaging user interactions through autonomous browser control and a dynamic 3D holographic Web Audio visualizer.",
-        "Scalable containerized architecture optimized for high-concurrency real-time audio processing workloads."
+        "Asynchronous, event-driven PR review pipeline delivering instant automated GitHub analysis and code feedback.",
+        "Reducing code review turnaround time by 99% (from hours to seconds) using parallel LangGraph workflows and Redis queuing.",
+        "Ensuring feedback reliability and 95% accuracy using an LLM-as-a-Judge hallucination filter and Qdrant Vector DB memory.",
+        "Highly scalable backend infrastructure containerized with Docker and Nginx, monitored via Celery Flower telemetry."
       ],
-      "image": "/images/voice_agent.png",
-      "technologies": ["LiveKit", "Deepgram", "ElevenLabs", "LangGraph", "Playwright", "PostgreSQL", "Redis", "Docker"],
-      "github": "https://github.com/saivikranth08/Multi-threaded-WebRTC-Voice-Agent--Xyra",
+      "image": "/images/pr_agent_dashboard.jpg",
+      "technologies": ["FastAPI", "Celery", "LangGraph", "LLaMA 3", "Qdrant", "Redis", "Docker"],
+      "github": "https://github.com/saivikranth08",
       "featured": true
     },
     {
@@ -173,16 +173,16 @@
     },
     {
       "id": 4,
-      "title": "GitHub Autonomous PR Review Agent",
+      "title": "Multi-Threaded WebRTC Voice Agent",
       "description": [
-        "Asynchronous, event-driven PR review pipeline delivering instant automated GitHub analysis and code feedback.",
-        "Reducing code review turnaround time by 99% (from hours to seconds) using parallel LangGraph workflows and Redis queuing.",
-        "Ensuring feedback reliability and 95% accuracy using an LLM-as-a-Judge hallucination filter and Qdrant Vector DB memory.",
-        "Highly scalable backend infrastructure containerized with Docker and Nginx, monitored via Celery Flower telemetry."
+        "Ultra-low-latency AI voice companion platform featuring real-time, bidirectional WebRTC streaming for seamless conversational experiences.",
+        "Orchestrating LiveKit, Deepgram STT, and LLaMA 3.3 to achieve sub-800ms human-like voice response times.",
+        "Driving engaging user interactions through autonomous browser control and a dynamic 3D holographic Web Audio visualizer.",
+        "Scalable containerized architecture optimized for high-concurrency real-time audio processing workloads."
       ],
-      "image": "/images/pr_agent_dashboard.jpg",
-      "technologies": ["FastAPI", "Celery", "LangGraph", "LLaMA 3", "Qdrant", "Redis", "Docker"],
-      "github": "https://github.com/saivikranth08",
+      "image": "/images/voice_agent.png",
+      "technologies": ["LiveKit", "Deepgram", "ElevenLabs", "LangGraph", "Playwright", "PostgreSQL", "Redis", "Docker"],
+      "github": "https://github.com/saivikranth08/Multi-threaded-WebRTC-Voice-Agent--Xyra",
       "featured": true
     }
   ],
