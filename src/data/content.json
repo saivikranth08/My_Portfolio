@@ -145,20 +145,6 @@
     },
     {
       "id": 2,
-      "title": "GitHub Autonomous PR Review Agent",
-      "description": [
-        "Asynchronous, event-driven PR review pipeline delivering instant automated GitHub analysis and code feedback.",
-        "Reducing code review turnaround time by 99% (from hours to seconds) using parallel LangGraph workflows and Redis queuing.",
-        "Ensuring feedback reliability and 95% accuracy using an LLM-as-a-Judge hallucination filter and Qdrant Vector DB memory.",
-        "Highly scalable backend infrastructure containerized with Docker and Nginx, monitored via Celery Flower telemetry."
-      ],
-      "image": "/images/pr_agent_dashboard.jpg",
-      "technologies": ["FastAPI", "Celery", "LangGraph", "LLaMA 3", "Qdrant", "Redis", "Docker"],
-      "github": "https://github.com/saivikranth08",
-      "featured": true
-    },
-    {
-      "id": 3,
       "title": "Conversational Text2SQL Assistant",
       "description": [
         "Intelligent database interface empowering non-technical stakeholders to translate natural language questions directly into complex SQL analytics.",
@@ -169,6 +155,20 @@
       "image": "/images/text2sql_assistant.png",
       "technologies": ["LangGraph", "FastAPI", "Streamlit", "PostgreSQL", "Redis", "SQLAlchemy", "Docker", "Groq"],
       "github": "https://github.com/saivikranth08/Text2SQL",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "GitHub Autonomous PR Review Agent",
+      "description": [
+        "Asynchronous, event-driven PR review pipeline delivering instant automated GitHub analysis and code feedback.",
+        "Reducing code review turnaround time by 99% (from hours to seconds) using parallel LangGraph workflows and Redis queuing.",
+        "Ensuring feedback reliability and 95% accuracy using an LLM-as-a-Judge hallucination filter and Qdrant Vector DB memory.",
+        "Highly scalable backend infrastructure containerized with Docker and Nginx, monitored via Celery Flower telemetry."
+      ],
+      "image": "/images/pr_agent_dashboard.jpg",
+      "technologies": ["FastAPI", "Celery", "LangGraph", "LLaMA 3", "Qdrant", "Redis", "Docker"],
+      "github": "https://github.com/saivikranth08",
       "featured": true
     },
     {
