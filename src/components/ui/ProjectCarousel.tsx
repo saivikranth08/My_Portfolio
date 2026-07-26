@@ -35,12 +35,29 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
     ...projects.slice(0, currentIndex),
   ];
 
+  const swipeConfidenceThreshold = 10000;
+  const swipePower = (offset: number, velocity: number) => {
+    return Math.abs(offset) * velocity;
+  };
+
   return (
     <div className="relative w-full max-w-6xl mx-auto px-4 pb-16">
       {/* Carousel Container */}
       <div className="overflow-hidden">
         <motion.div 
-          className="flex gap-6"
+          className="flex gap-6 cursor-grab active:cursor-grabbing"
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={0.2}
+          onDragEnd={(e, { offset, velocity }) => {
+            const swipe = swipePower(offset.x, velocity.x);
+
+            if (swipe < -swipeConfidenceThreshold) {
+              nextSlide();
+            } else if (swipe > swipeConfidenceThreshold) {
+              prevSlide();
+            }
+          }}
           layout
         >
           <AnimatePresence mode="popLayout">

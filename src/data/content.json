@@ -133,9 +133,10 @@
       "id": 1,
       "title": "Multi-Source RAG Assistant",
       "description": [
-        "Enterprise-grade document assistant that lets users chat with PDFs, websites, and scanned files in plain English.",
-        "Achieves highly accurate, hallucination-free answers using hybrid search and Cohere neural reranking.",
-        "Powered by stateful LangGraph workflows, PostgreSQL memory, and LlamaParse OCR."
+        "Enterprise-grade document intelligence platform enabling natural language queries across complex PDFs, websites, and scanned archives.",
+        "Delivering highly accurate, hallucination-free insights leveraging hybrid search architecture and Cohere neural reranking.",
+        "Robust data processing pipeline featuring stateful LangGraph workflows and scalable PostgreSQL memory.",
+        "Accelerating enterprise knowledge retrieval and streamlining data analysis workflows for unstructured data."
       ],
       "image": "/images/rag_assistant.png",
       "technologies": ["LangGraph", "FastAPI", "Streamlit", "Qdrant", "PostgreSQL", "LlamaParse", "Groq", "Cohere Rerank"],
@@ -146,9 +147,10 @@
       "id": 2,
       "title": "Multi-Threaded WebRTC Voice Agent",
       "description": [
-        "Ultra-low-latency AI voice companion featuring real-time, bidirectional WebRTC communication.",
-        "Orchestrates LiveKit, Deepgram STT, and LLaMA 3.3 to achieve incredible sub-800ms human-like response times.",
-        "Features autonomous browser control and a stunning 3D holographic Web Audio visualizer."
+        "Ultra-low-latency AI voice companion platform featuring real-time, bidirectional WebRTC streaming for seamless conversational experiences.",
+        "Orchestrating LiveKit, Deepgram STT, and LLaMA 3.3 to achieve sub-800ms human-like voice response times.",
+        "Driving engaging user interactions through autonomous browser control and a dynamic 3D holographic Web Audio visualizer.",
+        "Scalable containerized architecture optimized for high-concurrency real-time audio processing workloads."
       ],
       "image": "/images/voice_agent.png",
       "technologies": ["LiveKit", "Deepgram", "ElevenLabs", "LangGraph", "Playwright", "PostgreSQL", "Redis", "Docker"],
@@ -159,9 +161,10 @@
       "id": 3,
       "title": "Conversational Text2SQL Assistant",
       "description": [
-        "An intelligent interface that instantly translates natural language questions into complex SQL queries.",
-        "Features self-healing query execution and AST security layers to completely block destructive database commands.",
-        "Optimized for extreme speed with Redis caching, connection pooling, and live LangSmith telemetry."
+        "Intelligent database interface empowering non-technical stakeholders to translate natural language questions directly into complex SQL analytics.",
+        "Enterprise-ready security architecture featuring self-healing query execution and AST layers to block destructive database commands.",
+        "Optimized for extreme query speed and high throughput using Redis caching and advanced connection pooling techniques.",
+        "Comprehensive operational visibility and performance monitoring powered by live LangSmith telemetry."
       ],
       "image": "/images/text2sql_assistant.png",
       "technologies": ["LangGraph", "FastAPI", "Streamlit", "PostgreSQL", "Redis", "SQLAlchemy", "Docker", "Groq"],
@@ -172,9 +175,10 @@
       "id": 4,
       "title": "GitHub Autonomous PR Review Agent",
       "description": [
-        "Built an asynchronous PR review pipeline using FastAPI, Celery, and LLaMA 3, reducing turnaround time by 99% (from hours to seconds).",
-        "Improved AI feedback accuracy by 95% using an \"LLM-as-a-Judge\" hallucination filter and Qdrant Vector DB RAG memory.",
-        "Built a highly scalable backend infrastructure containerized with Docker, Nginx, and Celery Flower telemetry."
+        "Asynchronous, event-driven PR review pipeline delivering instant automated GitHub analysis and code feedback.",
+        "Reducing code review turnaround time by 99% (from hours to seconds) using parallel LangGraph workflows and Redis queuing.",
+        "Ensuring feedback reliability and 95% accuracy using an LLM-as-a-Judge hallucination filter and Qdrant Vector DB memory.",
+        "Highly scalable backend infrastructure containerized with Docker and Nginx, monitored via Celery Flower telemetry."
       ],
       "image": "/images/pr_agent_dashboard.jpg",
       "technologies": ["FastAPI", "Celery", "LangGraph", "LLaMA 3", "Qdrant", "Redis", "Docker"],
