@@ -77,19 +77,19 @@ const ResumePage = () => {
               </h3>
               <div className="space-y-3 text-sm sm:text-base">
                 <p className="text-gray-700 dark:text-gray-300">
-                  <strong className="text-gray-800 dark:text-gray-200">Programming:</strong> Python, C, SQL (MySQL, PostgreSQL), HTML, CSS
+                  <strong className="text-gray-800 dark:text-gray-200">AI/GenAI:</strong> LangChain, LangGraph, LangSmith, RAG, Prompt Engineering, FastMCP, Semantic Search, Hybrid Search, Reranking
                 </p>
                 <p className="text-gray-700 dark:text-gray-300">
-                  <strong className="text-gray-800 dark:text-gray-200">Frameworks & Libraries:</strong> LangChain, LangGraph, HuggingFace, FastAPI, Streamlit, Playwright, FastMCP
+                  <strong className="text-gray-800 dark:text-gray-200">Backend:</strong> Python, FastAPI, SQLAlchemy, Playwright, Pydantic, Celery(familiar), REST APIs, WebSockets
                 </p>
                 <p className="text-gray-700 dark:text-gray-300">
-                  <strong className="text-gray-800 dark:text-gray-200">Databases & Retrieval:</strong> PostgreSQL, MySQL, Redis, Qdrant, FAISS, Chroma
+                  <strong className="text-gray-800 dark:text-gray-200">Databases:</strong> PostgreSQL, MySQL, Redis, Qdrant, FAISS, ChromaDB
                 </p>
                 <p className="text-gray-700 dark:text-gray-300">
-                  <strong className="text-gray-800 dark:text-gray-200">AI/ML Concepts:</strong> LLMs, Embeddings, RAG, Prompt Engineering, Speech-to-Text (STT), Text-to-Speech (TTS), WebRTC
+                  <strong className="text-gray-800 dark:text-gray-200">LLM & ML:</strong> HuggingFace, Sentence Transformers, Embedding Models
                 </p>
                 <p className="text-gray-700 dark:text-gray-300">
-                  <strong className="text-gray-800 dark:text-gray-200">Tools:</strong> Docker, LangSmith, GitHub
+                  <strong className="text-gray-800 dark:text-gray-200">Tools & DevOps:</strong> Docker, Ragas, Flower, Git, GitHub
                 </p>
               </div>
             </div>
@@ -100,16 +100,6 @@ const ResumePage = () => {
                 <FaBriefcase className="mr-3 text-blue-600 dark:text-blue-400" /> Projects
               </h3>
               <div className="space-y-6">
-                <div>
-                  <h4 className="text-lg font-bold text-gray-800 dark:text-gray-200">Multi-Threaded WebRTC Voice Agent</h4>
-                  <ul className="list-disc list-outside pl-5 mt-2 space-y-1 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
-                    <li>Built a sub-100ms voice assistant using LiveKit WebRTC, Silero VAD, Deepgram STT, LLaMA 3.3, and Edge TTS.</li>
-                    <li>Added voice-controlled browser automation with LangGraph workflows for website interaction and app triggers.</li>
-                    <li>Achieved sub-2ms memory retrieval using PostgreSQL memory and Redis caching.</li>
-                    <li>Built a real-time 3D holographic UI with synchronized WebRTC data streams.</li>
-                  </ul>
-                </div>
-
                 <div>
                   <h4 className="text-lg font-bold text-gray-800 dark:text-gray-200">Conversational Text2SQL Assistant & Obsidian Console</h4>
                   <ul className="list-disc list-outside pl-5 mt-2 space-y-1 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
@@ -123,10 +113,30 @@ const ResumePage = () => {
                 <div>
                   <h4 className="text-lg font-bold text-gray-800 dark:text-gray-200">Multi-Source RAG AI Assistant</h4>
                   <ul className="list-disc list-outside pl-5 mt-2 space-y-1 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
-                    <li>Built a document assistant supporting PDFs, websites, text files, and scanned documents using LlamaParse OCR.</li>
+                    <li>Built a document assistant supporting PDFs, websites, text files, and scanned documents using Llama-Parse OCR.</li>
                     <li>Improved retrieval accuracy by 25% through hybrid search, embeddings, and neural reranking.</li>
                     <li>Reduced response time by 40% using LangGraph workflows with PostgreSQL memory.</li>
                     <li>Built telemetry dashboards with retrieval metrics, audit trails, and LangSmith integration.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="text-lg font-bold text-gray-800 dark:text-gray-200">GitHub Autonomous PR Review Agent</h4>
+                  <ul className="list-disc list-outside pl-5 mt-2 space-y-1 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
+                    <li>Built an asynchronous, event-driven PR review pipeline supporting instant GitHub analysis using FastAPI, Celery, and LLaMA 3.</li>
+                    <li>Reduced review turnaround by 99% using parallel LangGraph workflows and Redis queuing.</li>
+                    <li>Improved AI review accuracy by 95% using an &quot;LLM-as-a-Judge&quot; filter and Qdrant RAG memory.</li>
+                    <li>Built a scalable backend with Docker, Nginx, Celery, and Flower monitoring.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="text-lg font-bold text-gray-800 dark:text-gray-200">Multi-Threaded WebRTC Voice Agent</h4>
+                  <ul className="list-disc list-outside pl-5 mt-2 space-y-1 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
+                    <li>Built a sub-100ms voice assistant using LiveKit WebRTC, Silero VAD, Deepgram STT, LLaMA 3.3, and Edge TTS.</li>
+                    <li>Added voice-controlled browser automation with LangGraph workflows for website interaction and app triggers.</li>
+                    <li>Achieved sub-2ms memory retrieval using PostgreSQL memory and Redis caching.</li>
+                    <li>Built a real-time 3D holographic UI with synchronized WebRTC data streams.</li>
                   </ul>
                 </div>
               </div>
