@@ -44,7 +44,7 @@ function generateResumeContent(): string {
   const allSkills = getSkills();
   resumeContent += '\nDETAILED TECHNICAL SKILLS:\n';
   Object.entries(allSkills).forEach(([category, skillList]) => {
-    const skillNames = skillList.map(s => s.name).join(', ');
+    const skillNames = skillList.map((s: any) => s.name).join(', ');
     resumeContent += `- ${category.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}: ${skillNames}\n`;
   });
   resumeContent += '\n';
