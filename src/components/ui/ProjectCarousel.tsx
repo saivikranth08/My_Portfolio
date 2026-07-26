@@ -2,11 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
-import { FaGithub, FaProjectDiagram, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import Card3D from '@/components/ui/Card3D';
-import Button3D from '@/components/ui/Button3D';
-import SkillTag3D from '@/components/ui/SkillTag3D';
+import { FaGithub, FaArrowRight, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 interface Project {
   id: number;
@@ -33,120 +29,103 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
     setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
   };
 
-  // Reorder the array so the current index is always first
+  // Create an array that loops infinitely starting from currentIndex
   const visibleProjects = [
     ...projects.slice(currentIndex),
     ...projects.slice(0, currentIndex),
   ];
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto px-12 sm:px-16 pb-8">
-      {/* Navigation Arrows */}
-      <button 
-        onClick={prevSlide}
-        className="absolute left-0 top-1/2 -translate-y-1/2 z-20 p-3 sm:p-4 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 shadow-lg hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:scale-110"
-        aria-label="Previous project"
-      >
-        <FaChevronLeft className="text-xl sm:text-2xl" />
-      </button>
-
-      <button 
-        onClick={nextSlide}
-        className="absolute right-0 top-1/2 -translate-y-1/2 z-20 p-3 sm:p-4 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 shadow-lg hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:scale-110"
-        aria-label="Next project"
-      >
-        <FaChevronRight className="text-xl sm:text-2xl" />
-      </button>
-
+    <div className="relative w-full max-w-6xl mx-auto px-4 pb-16">
       {/* Carousel Container */}
-      <div className="overflow-hidden p-4 -m-4">
+      <div className="overflow-hidden">
         <motion.div 
-          className="flex gap-6 sm:gap-8"
+          className="flex gap-6"
           layout
         >
           <AnimatePresence mode="popLayout">
-            {visibleProjects.map((project) => (
+            {visibleProjects.map((project, idx) => (
               <motion.div
                 key={project.id}
                 layout
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.8 }}
-                transition={{ duration: 0.5, type: 'spring', bounce: 0.3 }}
-                className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.33rem)] flex-shrink-0"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
+                className="w-[90vw] md:w-[80%] flex-shrink-0"
               >
-                <Card3D
-                  className="overflow-hidden flex flex-col h-full bg-gray-100 dark:bg-gray-800 p-0 text-gray-800 dark:text-gray-100 shadow-xl"
-                  hoverScale={1.03}
-                  mouseIntensity={0}
-                  gradientShadow={false}
-                  glowOnHover={false}
-                >
-                  {project.image ? (
-                    <div 
-                      className="h-40 sm:h-48 relative w-full overflow-hidden"
-                      style={{
-                        WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)',
-                        maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)'
-                      }}
-                    >
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        className="object-cover transition-transform duration-500 hover:scale-110"
-                      />
-                    </div>
-                  ) : (
-                    <div className="h-40 sm:h-48 bg-gradient-to-r from-blue-400/80 to-purple-500/80 dark:from-blue-600/70 dark:to-purple-700/70 relative flex items-center justify-center">
-                      <FaProjectDiagram className="text-white dark:text-gray-100 text-4xl sm:text-6xl opacity-90" />
-                      <div className="absolute inset-0 bg-gradient-to-r from-blue-50/20 to-purple-50/20 dark:from-blue-900/30 dark:to-purple-900/30"></div>
-                    </div>
-                  )}
+                <div className="relative overflow-hidden bg-[#121316] border border-gray-800 rounded-2xl p-8 sm:p-10 h-full flex flex-col group transition-colors duration-300 hover:border-gray-700">
+                  
+                  {/* Large Faded Background Number */}
+                  <div className="absolute top-4 right-8 text-[120px] font-black text-white/[0.03] select-none pointer-events-none leading-none z-0">
+                    {String(project.id).padStart(2, '0')}
+                  </div>
 
-                  <div className="p-4 sm:p-6 flex-grow flex flex-col">
-                    <h3 className="text-lg sm:text-xl font-bold mb-3 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent line-clamp-2">
-                      {project.title}
-                    </h3>
-                    <ul className="text-gray-700 dark:text-gray-300 mb-4 space-y-2 flex-grow">
+                  <div className="relative z-10 flex-grow">
+                    {/* Title */}
+                    <div className="flex justify-between items-start mb-6">
+                      <h3 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        {project.title}
+                      </h3>
+                    </div>
+
+                    {/* Bullet Points */}
+                    <ul className="space-y-4 mb-8">
                       {project.description.map((point, index) => (
-                        <li key={index} className="flex items-start text-sm sm:text-base">
-                          <span className="text-purple-500 mr-2 mt-1">•</span>
+                        <li key={index} className="flex items-start text-gray-300 text-sm sm:text-base leading-relaxed">
+                          <FaArrowRight className="text-emerald-400 mt-1.5 mr-3 flex-shrink-0" size={12} />
                           <span>{point}</span>
                         </li>
                       ))}
                     </ul>
-
-                    <div className="mb-4 pt-2 border-t border-gray-200 dark:border-gray-700">
-                      <div className="flex flex-wrap gap-2">
-                        {project.technologies.map((tech, index) => (
-                          <SkillTag3D
-                            key={index}
-                            className="text-xs"
-                          >
-                            {tech}
-                          </SkillTag3D>
-                        ))}
-                      </div>
-                    </div>
                   </div>
 
-                  <div className="p-4 sm:p-6 pt-0 flex justify-center mt-auto">
-                    <Button3D
-                      href={project.github}
-                      variant="outline"
-                      size="sm"
-                      icon={<FaGithub />}
-                      className="bg-transparent w-full justify-center"
-                    >
-                      Source Code
-                    </Button3D>
+                  {/* Technologies */}
+                  <div className="relative z-10 mt-auto pt-6 border-t border-gray-800/50 flex flex-wrap gap-2">
+                    {project.technologies.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1.5 text-xs font-medium text-gray-400 bg-transparent border border-gray-800 rounded-md"
+                      >
+                        {tech}
+                      </span>
+                    ))}
                   </div>
-                </Card3D>
+
+                  {/* GitHub Link positioned absolutely at the top right, but below the number */}
+                  <a 
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute bottom-8 right-8 z-20 flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-white transition-colors"
+                  >
+                    <FaGithub size={18} />
+                    <span className="hidden sm:inline">Source Code</span>
+                  </a>
+
+                </div>
               </motion.div>
             ))}
           </AnimatePresence>
         </motion.div>
+      </div>
+
+      {/* Square Navigation Buttons (Bottom Right) */}
+      <div className="absolute -bottom-2 right-4 md:right-8 flex gap-3 z-30">
+        <button 
+          onClick={prevSlide}
+          className="p-3 border border-gray-800 bg-[#121316] rounded-md text-gray-400 hover:text-white hover:border-gray-600 transition-colors"
+          aria-label="Previous project"
+        >
+          <FaChevronLeft size={14} />
+        </button>
+        <button 
+          onClick={nextSlide}
+          className="p-3 border border-gray-800 bg-[#121316] rounded-md text-gray-400 hover:text-white hover:border-gray-600 transition-colors"
+          aria-label="Next project"
+        >
+          <FaChevronRight size={14} />
+        </button>
       </div>
     </div>
   );
