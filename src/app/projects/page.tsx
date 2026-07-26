@@ -49,18 +49,29 @@ export default function ProjectsPage() {
               Featured Projects
             </AnimatedHeading>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 sm:gap-8 pb-8" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+            <style jsx>{`
+              div::-webkit-scrollbar {
+                display: none;
+              }
+            `}</style>
             {featuredProjects.map(project => (
-              <Card3D
-                key={project.id}
-                className="overflow-hidden flex flex-col h-full bg-gray-100 dark:bg-gray-800 p-0 text-gray-800 dark:text-gray-100"
-                hoverScale={1.03}
-                mouseIntensity={0}
-                gradientShadow={false}
-                glowOnHover={false}
-              >
-                {project.image ? (
-                  <div className="h-40 sm:h-48 relative w-full overflow-hidden">
+              <div key={project.id} className="w-[85vw] sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.33rem)] flex-shrink-0 snap-center group">
+                <Card3D
+                  className="overflow-hidden flex flex-col h-full bg-gray-100 dark:bg-gray-800 p-0 text-gray-800 dark:text-gray-100"
+                  hoverScale={1.03}
+                  mouseIntensity={0}
+                  gradientShadow={false}
+                  glowOnHover={false}
+                >
+                  {project.image ? (
+                    <div 
+                      className="h-40 sm:h-48 relative w-full overflow-hidden"
+                      style={{
+                        WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)',
+                        maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)'
+                      }}
+                    >
                     <Image
                       src={project.image}
                       alt={project.title}
@@ -114,6 +125,7 @@ export default function ProjectsPage() {
                   </Button3D>
                 </div>
               </Card3D>
+            </div>
             ))}
           </div>
         </div>
