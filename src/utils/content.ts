@@ -51,7 +51,11 @@ export interface Skill {
 }
 
 export interface SkillCategory {
-  [key: string]: Skill[];
+  aiGenAi: Skill[];
+  backend: Skill[];
+  databases: Skill[];
+  llmMl: Skill[];
+  toolsDevOps: Skill[];
 }
 
 export interface Project {
@@ -68,12 +72,11 @@ export interface Project {
 export interface ResumeInfo {
   summary: string;
   skills: {
-    languages: string;
-    frontend: string;
+    aiGenAi: string;
     backend: string;
     databases: string;
-    aiMl: string;
-    devOps: string;
+    llmMl: string;
+    toolsDevOps: string;
   };
 }
 

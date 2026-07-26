@@ -85,43 +85,45 @@
   ],
 
   "skills": {
-    "programmingLanguages": [
-      { "name": "Python", "icon": "FaPython" },
-      { "name": "C", "icon": "SiC" },
-      { "name": "SQL (MySQL, PostgreSQL)", "icon": "FaDatabase" },
-      { "name": "HTML", "icon": "FaHtml5" },
-      { "name": "CSS", "icon": "FaCss3Alt" }
-    ],
-    "frameworksAndLibraries": [
+    "aiGenAi": [
       { "name": "LangChain", "icon": "FaLink" },
       { "name": "LangGraph", "icon": "FaSitemap" },
-      { "name": "HuggingFace", "icon": "SiHuggingface" },
-      { "name": "FastAPI", "icon": "SiFastapi" },
-      { "name": "Streamlit", "icon": "SiStreamlit" },
-      { "name": "Playwright", "icon": "FaRobot" },
-      { "name": "FastMCP", "icon": "FaCode" }
+      { "name": "LangSmith", "icon": "FaChartLine" },
+      { "name": "RAG", "icon": "FaBookOpen" },
+      { "name": "Prompt Engineering", "icon": "FaKeyboard" },
+      { "name": "FastMCP", "icon": "FaCode" },
+      { "name": "Semantic Search", "icon": "FaSearch" },
+      { "name": "Hybrid Search", "icon": "FaSearch" },
+      { "name": "Reranking", "icon": "FaSortAmountUp" }
     ],
-    "databasesAndRetrieval": [
+    "backend": [
+      { "name": "Python", "icon": "FaPython" },
+      { "name": "FastAPI", "icon": "SiFastapi" },
+      { "name": "SQLAlchemy", "icon": "FaDatabase" },
+      { "name": "Playwright", "icon": "FaRobot" },
+      { "name": "Pydantic", "icon": "FaCode" },
+      { "name": "Celery(familiar)", "icon": "FaServer" },
+      { "name": "REST APIs", "icon": "FaExchangeAlt" },
+      { "name": "WebSockets", "icon": "FaPlug" }
+    ],
+    "databases": [
       { "name": "PostgreSQL", "icon": "SiPostgresql" },
       { "name": "MySQL", "icon": "SiMysql" },
       { "name": "Redis", "icon": "SiRedis" },
       { "name": "Qdrant", "icon": "FaDatabase" },
       { "name": "FAISS", "icon": "FaSearch" },
-      { "name": "Chroma", "icon": "FaDatabase" }
+      { "name": "ChromaDB", "icon": "FaDatabase" }
     ],
-    "aiMlConcepts": [
-      { "name": "LLMs", "icon": "FaBrain" },
-      { "name": "Embeddings", "icon": "FaVectorSquare" },
-      { "name": "RAG", "icon": "FaBookOpen" },
-      { "name": "Prompt Engineering", "icon": "FaKeyboard" },
-      { "name": "Speech-to-Text (STT)", "icon": "FaMicrophone" },
-      { "name": "Text-to-Speech (TTS)", "icon": "FaVolumeUp" },
-      { "name": "Model Context Protocol (MCP)", "icon": "FaPlug" },
-      { "name": "WebRTC", "icon": "SiWebrtc" }
+    "llmMl": [
+      { "name": "HuggingFace", "icon": "SiHuggingface" },
+      { "name": "Sentence Transformers", "icon": "FaVectorSquare" },
+      { "name": "Embedding Models", "icon": "FaBrain" }
     ],
-    "tools": [
+    "toolsDevOps": [
       { "name": "Docker", "icon": "FaDocker" },
-      { "name": "LangSmith", "icon": "FaChartLine" },
+      { "name": "Ragas", "icon": "FaChartBar" },
+      { "name": "Flower", "icon": "FaChartLine" },
+      { "name": "Git", "icon": "FaGithub" },
       { "name": "GitHub", "icon": "FaGithub" }
     ]
   },
@@ -171,11 +173,11 @@
   "resume": {
     "summary": "B.Tech ECE student with expertise in Generative AI and agentic systems. Specialized in RAG applications, production-grade system design, and end-to-end problem solving. Passionate about building AI solutions that work at scale.",
     "skills": {
-      "languages": "Python, JavaScript, SQL, HTML, CSS, C",
-      "aiFrameworks": "LangChain, LangGraph, HuggingFace, FastAPI, Streamlit",
-      "databases": "PostgreSQL, MySQL, Redis, Qdrant, FAISS, Chroma",
-      "aiml": "LLMs, Embeddings, RAG, Prompt Engineering, Speech-to-Text, Text-to-Speech",
-      "devOps": "Docker, LangSmith, GitHub"
+      "aiGenAi": "LangChain, LangGraph, LangSmith, RAG, Prompt Engineering, FastMCP, Semantic Search, Hybrid Search, Reranking",
+      "backend": "Python, FastAPI, SQLAlchemy, Playwright, Pydantic, Celery(familiar), REST APIs, WebSockets",
+      "databases": "PostgreSQL, MySQL, Redis, Qdrant, FAISS, ChromaDB",
+      "llmMl": "HuggingFace, Sentence Transformers, Embedding Models",
+      "toolsDevOps": "Docker, Ragas, Flower, Git, GitHub"
     }
   },
 

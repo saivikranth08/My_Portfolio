@@ -70,33 +70,33 @@ const getSkillCategories = () => {
   return [
     {
       id: 1,
-      title: 'Programming',
-      icon: <FaCode className="text-4xl text-purple-500 mb-4" />,
-      skills: skills.programmingLanguages || [],
+      title: 'AI/GenAI',
+      icon: <FaBrain className="text-4xl text-purple-500 mb-4" />,
+      skills: skills.aiGenAi || [],
     },
     {
       id: 2,
-      title: 'Frameworks & Libraries',
-      icon: <FaLaptopCode className="text-4xl text-green-500 mb-4" />,
-      skills: skills.frameworksAndLibraries || [],
+      title: 'Backend',
+      icon: <FaCode className="text-4xl text-green-500 mb-4" />,
+      skills: skills.backend || [],
     },
     {
       id: 3,
-      title: 'Databases & Retrieval',
+      title: 'Databases',
       icon: <FaDatabase className="text-4xl text-blue-500 mb-4" />,
-      skills: skills.databasesAndRetrieval || [],
+      skills: skills.databases || [],
     },
     {
       id: 4,
-      title: 'AI/ML Concepts',
-      icon: <FaBrain className="text-4xl text-pink-500 mb-4" />,
-      skills: skills.aiMlConcepts || [],
+      title: 'LLM & ML',
+      icon: <FaVectorSquare className="text-4xl text-pink-500 mb-4" />,
+      skills: skills.llmMl || [],
     },
     {
       id: 5,
-      title: 'Tools',
+      title: 'Tools & DevOps',
       icon: <FaTools className="text-4xl text-gray-500 mb-4" />,
-      skills: skills.tools || [],
+      skills: skills.toolsDevOps || [],
     },
   ];
 };
