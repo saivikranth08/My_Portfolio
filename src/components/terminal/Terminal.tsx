@@ -366,16 +366,23 @@ const Terminal: React.FC = () => {
                 <li>Implemented hybrid retrieval using semantic search, keyword matching, embeddings, and neural reranking.</li>
                 <li>Designed LangGraph workflows with PostgreSQL memory and persistent conversation history.</li>
               </ul>
+
+              <p className="font-bold">GitHub Autonomous PR Review Agent</p>
+              <ul className="list-disc ml-4 mb-2">
+                <li>Built an asynchronous, event-driven PR review pipeline supporting instant GitHub analysis using FastAPI, Celery, and LLaMA 3.</li>
+                <li>Reduced code review turnaround time by 99% using parallel LangGraph workflows and Redis queuing.</li>
+                <li>Improved AI feedback accuracy by 95% using an LLM-as-a-Judge hallucination filter and Qdrant DB.</li>
+              </ul>
             </div>
 
             <div className="mb-4">
               <h3 className="text-lg font-bold text-yellow-400">SKILLS</h3>
               <p className="border-b border-gray-600 mb-2"></p>
-              <p><span className="font-bold">Programming:</span> Python, C, SQL (MySQL, PostgreSQL), HTML, CSS</p>
-              <p><span className="font-bold">Frameworks & Libraries:</span> LangChain, LangGraph, HuggingFace, FastAPI, Streamlit, Playwright, FastMCP</p>
-              <p><span className="font-bold">Databases & Retrieval:</span> PostgreSQL, MySQL, Redis, Qdrant, FAISS, Chroma</p>
-              <p><span className="font-bold">AI/ML Concepts:</span> LLMs, Embeddings, RAG, Prompt Engineering, Speech-to-Text (STT), Text-to-Speech (TTS), WebRTC</p>
-              <p><span className="font-bold">Tools & DevOps:</span> Docker, LangSmith, GitHub</p>
+              <p><span className="font-bold">AI/GenAI:</span> LangChain, LangGraph, LangSmith, RAG, Prompt Engineering, FastMCP, Semantic Search, Hybrid Search, Reranking</p>
+              <p><span className="font-bold">Backend:</span> Python, FastAPI, SQLAlchemy, Playwright, Pydantic, Celery(familiar), REST APIs, WebSockets</p>
+              <p><span className="font-bold">Databases:</span> PostgreSQL, MySQL, Redis, Qdrant, FAISS, ChromaDB</p>
+              <p><span className="font-bold">LLM & ML:</span> HuggingFace, Sentence Transformers, Embedding Models</p>
+              <p><span className="font-bold">Tools & DevOps:</span> Docker, Ragas, Flower, Git, GitHub</p>
             </div>
 
             <div>

@@ -53,19 +53,19 @@ const SpotlightWrapper = ({ children, glowColor }: { children: React.ReactNode, 
 
 const marqueeSkills = [
   { name: 'Python', icon: FaPython, color: 'text-blue-500' },
-  { name: 'C', icon: SiC, color: 'text-blue-500' },
+  { name: 'FastAPI', icon: SiFastapi, color: 'text-emerald-500' },
   { name: 'PostgreSQL', icon: SiPostgresql, color: 'text-blue-600' },
   { name: 'MySQL', icon: SiMysql, color: 'text-blue-500' },
-  { name: 'HTML5', icon: FaHtml5, color: 'text-orange-500' },
-  { name: 'CSS3', icon: FaCss3Alt, color: 'text-blue-400' },
   { name: 'LangChain', icon: FaBrain, color: 'text-purple-500' },
   { name: 'LangGraph', icon: FaBrain, color: 'text-indigo-500' },
-  { name: 'FastAPI', icon: SiFastapi, color: 'text-emerald-500' },
   { name: 'Streamlit', icon: SiStreamlit, color: 'text-red-500' },
   { name: 'Playwright', icon: FaRobot, color: 'text-emerald-500' },
   { name: 'Hugging Face', icon: SiHuggingface, color: 'text-yellow-400' },
   { name: 'Redis', icon: SiRedis, color: 'text-red-500' },
   { name: 'Docker', icon: FaDocker, color: 'text-blue-400' },
+  { name: 'SQLAlchemy', icon: FaDatabase, color: 'text-blue-500' },
+  { name: 'Celery', icon: FaLightbulb, color: 'text-yellow-500' },
+  { name: 'Qdrant', icon: FaDatabase, color: 'text-indigo-500' },
   { name: 'GitHub', icon: FaGithub, color: 'text-neutral-800 dark:text-white' },
 ];
 
