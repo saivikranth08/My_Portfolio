@@ -10,6 +10,7 @@ import ExpandingText from '@/components/ui/ExpandingText';
 import Button3D from '@/components/ui/Button3D';
 import SkillTag3D from '@/components/ui/SkillTag3D';
 import AnimatedHeading from '@/components/ui/AnimatedHeading';
+import ProjectCarousel from '@/components/ui/ProjectCarousel';
 
 // Import content management utilities
 import { getFeaturedProjects } from '@/utils/content';
@@ -49,85 +50,7 @@ export default function ProjectsPage() {
               Featured Projects
             </AnimatedHeading>
           </div>
-          <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 sm:gap-8 pb-8" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-            <style jsx>{`
-              div::-webkit-scrollbar {
-                display: none;
-              }
-            `}</style>
-            {featuredProjects.map(project => (
-              <div key={project.id} className="w-[85vw] sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.33rem)] flex-shrink-0 snap-center group">
-                <Card3D
-                  className="overflow-hidden flex flex-col h-full bg-gray-100 dark:bg-gray-800 p-0 text-gray-800 dark:text-gray-100"
-                  hoverScale={1.03}
-                  mouseIntensity={0}
-                  gradientShadow={false}
-                  glowOnHover={false}
-                >
-                  {project.image ? (
-                    <div 
-                      className="h-40 sm:h-48 relative w-full overflow-hidden"
-                      style={{
-                        WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)',
-                        maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)'
-                      }}
-                    >
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover transition-transform duration-500 hover:scale-110"
-                    />
-                  </div>
-                ) : (
-                  <div className="h-40 sm:h-48 bg-gradient-to-r from-blue-400/80 to-purple-500/80 dark:from-blue-600/70 dark:to-purple-700/70 relative flex items-center justify-center">
-                    <FaProjectDiagram className="text-white dark:text-gray-100 text-4xl sm:text-6xl opacity-90" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-50/20 to-purple-50/20 dark:from-blue-900/30 dark:to-purple-900/30"></div>
-                  </div>
-                )}
-
-                <div className="p-4 sm:p-6 flex-grow">
-                  <h3 className="text-lg sm:text-xl font-bold mb-2 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-                    {project.title}
-                  </h3>
-                  <ul className="text-gray-700 dark:text-gray-300 mb-4 space-y-2">
-                    {project.description.map((point, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="text-accent mr-2 mt-1">•</span>
-                        <span>{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className="mb-4 max-h-16 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 dark:scrollbar-thumb-gray-600 scrollbar-track-transparent">
-                    <div className="flex flex-wrap gap-2">
-                      {project.technologies.map((tech, index) => (
-                        <SkillTag3D
-                          key={index}
-                          className="text-xs"
-                        >
-                          {tech}
-                        </SkillTag3D>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="p-4 sm:p-6 pt-0 flex justify-center">
-                  <Button3D
-                    href={project.github}
-                    variant="outline"
-                    size="sm"
-                    icon={<FaGithub />}
-                    className="bg-transparent"
-                  >
-                    Code
-                  </Button3D>
-                </div>
-              </Card3D>
-            </div>
-            ))}
-          </div>
+          <ProjectCarousel projects={featuredProjects} />
         </div>
 
 

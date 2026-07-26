@@ -172,8 +172,7 @@
       "id": 4,
       "title": "GitHub Autonomous PR Review Agent",
       "description": [
-        "Built an asynchronous, event-driven PR review pipeline supporting instant GitHub analysis using FastAPI, Celery, and LLaMA 3.",
-        "Reduced code review turnaround time by 99% (from hours to seconds) using parallel LangGraph workflows and Redis queuing.",
+        "Built an asynchronous PR review pipeline using FastAPI, Celery, and LLaMA 3, reducing turnaround time by 99% (from hours to seconds).",
         "Improved AI feedback accuracy by 95% using an \"LLM-as-a-Judge\" hallucination filter and Qdrant Vector DB RAG memory.",
         "Built a highly scalable backend infrastructure containerized with Docker, Nginx, and Celery Flower telemetry."
       ],
