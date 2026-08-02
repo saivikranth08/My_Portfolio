@@ -153,7 +153,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose, o
                     </div>
 
                     {/* Right Column: Simulation Video */}
-                    <div className="w-full lg:w-[45%] flex flex-col justify-center items-center relative lg:pl-2">
+                    <div className="w-full lg:w-[45%] flex flex-col justify-end items-center relative lg:pl-2">
                       <div className="w-full max-w-xl mx-auto rounded-xl overflow-hidden ring-1 ring-gray-800 shadow-2xl relative">
                         {renderSimulation()}
                         
