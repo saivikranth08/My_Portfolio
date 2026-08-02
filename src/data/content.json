@@ -20,7 +20,7 @@
     "name": "Vikranth",
     "roles": [
       { "prefix": "I'm an ", "name": "AI Engineer" },
-      { "prefix": "I'm building ", "name": "Generative AI & Agentic Systems" }
+      { "prefix": "I'm building ", "name": "Gen AI & Agentic Systems" }
     ],
     "bio": [
       "With a strong passion for AI and emerging technologies, I enjoy building intelligent systems that address real-world challenges. I'm driven by curiosity and continuous learning, exploring new technologies to design effective solutions and create impactful applications."
