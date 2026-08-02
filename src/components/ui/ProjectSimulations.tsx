@@ -10,22 +10,22 @@ export const Text2SQLSimulation = () => {
 
   useEffect(() => {
     const sequence = async () => {
-      await new Promise(r => setTimeout(r, 1500)); setStep(1); // Type question
-      await new Promise(r => setTimeout(r, 2000)); setStep(2); // LangGraph Route
-      await new Promise(r => setTimeout(r, 2500)); setStep(3); // Error & Self-Heal
-      await new Promise(r => setTimeout(r, 2500)); setStep(4); // Cache hit & Result
+      await new Promise(r => setTimeout(r, 600)); setStep(1);
+      await new Promise(r => setTimeout(r, 1200)); setStep(2);
+      await new Promise(r => setTimeout(r, 1800)); setStep(3);
+      await new Promise(r => setTimeout(r, 2200)); setStep(4);
     };
     sequence();
   }, []);
 
   return (
-    <div className="w-full h-[400px] bg-[#0d1117] rounded-xl overflow-hidden flex font-mono text-sm border border-gray-800 shadow-2xl relative">
+    <div className="w-full h-[340px] bg-[#0d1117] rounded-xl overflow-hidden flex font-mono text-sm border border-gray-800 shadow-2xl relative">
       {/* Left Chat UI */}
       <div className="w-1/2 h-full flex flex-col border-r border-gray-800 bg-[#161b22] relative p-4">
         <div className="flex justify-between items-center mb-6 border-b border-gray-700 pb-2">
           <span className="font-bold text-gray-200 text-lg tracking-wider">Obsidian Console</span>
           <div className="flex gap-2">
-            <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-xs flex items-center gap-1"><FaDatabase size={10}/> PG</span>
+            <span className="px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs flex items-center gap-1"><FaDatabase size={10}/> PG</span>
             <span className="px-2 py-0.5 rounded bg-rose-500/20 text-rose-400 text-xs flex items-center gap-1"><FaDatabase size={10}/> Redis</span>
           </div>
         </div>
@@ -38,13 +38,13 @@ export const Text2SQLSimulation = () => {
           )}
           {step >= 4 && (
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="bg-[#0d1117] border border-gray-700 rounded p-3 mt-4">
-              <div className="text-emerald-400 font-bold mb-2 flex items-center gap-2"><FaCheckCircle/> Query Generated</div>
-              <pre className="text-xs text-gray-300">
+              <div className="text-blue-400 font-bold mb-2 flex items-center gap-2"><FaCheckCircle/> Query Generated</div>
+              <div className="text-[10px] text-gray-300 font-mono leading-relaxed">
                 <span className="text-pink-400">SELECT</span> customer_name, <span className="text-pink-400">SUM</span>(revenue) <span className="text-pink-400">AS</span> total<br/>
                 <span className="text-pink-400">FROM</span> sales<br/>
                 <span className="text-pink-400">GROUP BY</span> customer_name<br/>
                 <span className="text-pink-400">ORDER BY</span> total <span className="text-pink-400">DESC LIMIT</span> 5;
-              </pre>
+              </div>
               <button className="mt-3 w-full bg-blue-600/20 text-blue-400 hover:bg-blue-600/40 border border-blue-500/50 rounded py-1 flex items-center justify-center gap-2 transition-colors">
                 <FaDownload /> Download CSV
               </button>
@@ -68,11 +68,11 @@ export const Text2SQLSimulation = () => {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-1 mb-2">
               <div className="text-red-400 font-bold">[Error] column "revenue" does not exist</div>
               <div className="text-yellow-400">[Self-Heal] Re-entering generate_sql with error context...</div>
-              <div className="text-green-400">[Success] AST Validation Passed.</div>
+              <div className="text-blue-400">[Success] AST Validation Passed.</div>
             </motion.div>
           )}
           {step >= 4 && (
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mt-auto border-t border-gray-800 pt-2 text-emerald-400 font-bold bg-emerald-900/20 p-2 rounded flex justify-between">
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mt-auto border-t border-gray-800 pt-2 text-blue-400 font-bold bg-blue-900/20 p-2 rounded flex justify-between">
               <span>⚡ Redis CACHE HIT</span>
               <span>Latency: 2ms</span>
             </motion.div>
@@ -89,16 +89,16 @@ export const RAGSimulation = () => {
 
   useEffect(() => {
     const sequence = async () => {
-      await new Promise(r => setTimeout(r, 1000)); setStep(1); // Upload PDF
-      await new Promise(r => setTimeout(r, 2000)); setStep(2); // FastAPI & LlamaParse
-      await new Promise(r => setTimeout(r, 2500)); setStep(3); // LangSmith & Cohere Rerank
-      await new Promise(r => setTimeout(r, 2500)); setStep(4); // DB commit & Answer
+      await new Promise(r => setTimeout(r, 600)); setStep(1); 
+      await new Promise(r => setTimeout(r, 1200)); setStep(2); 
+      await new Promise(r => setTimeout(r, 1800)); setStep(3); 
+      await new Promise(r => setTimeout(r, 2200)); setStep(4);
     };
     sequence();
   }, []);
 
   return (
-    <div className="w-full h-[400px] bg-[#0d1117] rounded-xl overflow-hidden flex font-mono text-sm border border-gray-800 shadow-2xl relative">
+    <div className="w-full h-[340px] bg-[#0d1117] rounded-xl overflow-hidden flex font-mono text-sm border border-gray-800 shadow-2xl relative">
       <div className="w-1/2 h-full bg-[#161b22] p-4 flex flex-col border-r border-gray-800 relative">
         <div className="text-center text-gray-400 font-semibold mb-4 border-b border-gray-700 pb-2">RAG Workspace</div>
         
@@ -125,7 +125,7 @@ export const RAGSimulation = () => {
         )}
       </div>
 
-      <div className="w-1/2 h-full bg-black p-4 text-green-400 flex flex-col text-xs space-y-1 relative overflow-hidden">
+      <div className="w-1/2 h-full bg-black p-4 text-blue-400 flex flex-col text-xs space-y-1 relative overflow-hidden">
         <div className="text-gray-500 mb-2 border-b border-gray-800 pb-1">FastAPI Terminal</div>
         <AnimatePresence>
           {step >= 2 && (
@@ -144,7 +144,7 @@ export const RAGSimulation = () => {
             </motion.div>
           )}
           {step >= 4 && (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-auto text-emerald-300">
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-auto text-blue-300">
               [SQLAlchemy] COMMIT row to chat_messages...
             </motion.div>
           )}
@@ -160,30 +160,30 @@ export const PRReviewSimulation = () => {
 
   useEffect(() => {
     const sequence = async () => {
-      await new Promise(r => setTimeout(r, 1000)); setStep(1); // Create PR
-      await new Promise(r => setTimeout(r, 2000)); setStep(2); // Smee webhook & Celery Parallel
-      await new Promise(r => setTimeout(r, 2500)); setStep(3); // LLM-as-a-judge
-      await new Promise(r => setTimeout(r, 2000)); setStep(4); // GitHub Comment
+      await new Promise(r => setTimeout(r, 600)); setStep(1);
+      await new Promise(r => setTimeout(r, 1200)); setStep(2);
+      await new Promise(r => setTimeout(r, 1800)); setStep(3);
+      await new Promise(r => setTimeout(r, 2200)); setStep(4);
     };
     sequence();
   }, []);
 
   return (
-    <div className="w-full h-[400px] bg-[#0d1117] rounded-xl overflow-hidden flex font-mono text-sm border border-gray-800 shadow-2xl relative">
-      <div className="w-1/2 h-full bg-white p-4 border-r border-gray-300 flex flex-col text-gray-900 relative">
-        <div className="flex items-center gap-2 border-b border-gray-200 pb-2 mb-4">
+    <div className="w-full h-[340px] bg-[#0d1117] rounded-xl overflow-hidden flex font-mono text-sm border border-gray-800 shadow-2xl relative">
+      <div className="w-1/2 h-full bg-[#161b22] p-4 border-r border-gray-800 flex flex-col text-gray-300 relative">
+        <div className="flex items-center gap-2 border-b border-gray-700 pb-2 mb-4">
           <FaGithub size={20} /> <span className="font-bold">saivikranth08 / core-api</span>
         </div>
         
-        <div className="bg-gray-100 border border-gray-200 rounded p-3 mb-4">
-          <div className="font-semibold text-gray-700 mb-1">Update database.py</div>
-          <pre className="text-[10px] bg-red-50 text-red-800 p-2 rounded mt-2 border border-red-200">
-            + cursor.execute(f"SELECT * FROM users WHERE id = {user_id}")<br/>
+        <div className="bg-[#0d1117] border border-gray-800 rounded p-3 mb-4">
+          <div className="font-semibold text-gray-300 mb-1">Update database.py</div>
+          <div className="text-[10px] bg-red-900/20 text-red-400 p-2 rounded mt-2 border border-red-900/50 font-mono leading-relaxed">
+            + cursor.execute(f"SELECT * FROM users WHERE id = {'{user_id}'}")<br/>
             + for item in items:<br/>
-            +     time.sleep(1) # simulate work
-          </pre>
+            + &nbsp;&nbsp;&nbsp;&nbsp;time.sleep(1) # simulate work
+          </div>
           {step < 1 && (
-            <button className="mt-3 bg-green-600 hover:bg-green-700 text-white font-bold py-1.5 px-3 rounded text-xs transition-colors">
+            <button className="mt-3 bg-blue-600 hover:bg-blue-700 text-white font-bold py-1.5 px-3 rounded text-xs transition-colors">
               Create pull request
             </button>
           )}
@@ -191,12 +191,12 @@ export const PRReviewSimulation = () => {
 
         <AnimatePresence>
           {step >= 4 && (
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="border border-blue-200 bg-blue-50 rounded p-3 mt-auto relative">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="border border-blue-900/50 bg-blue-900/20 rounded p-3 mt-auto relative">
                <div className="absolute -top-3 -left-3 bg-blue-600 text-white p-1.5 rounded-full"><FaRobot size={12}/></div>
-               <div className="font-bold text-blue-900 text-xs mb-1">Autonomous Agent Review</div>
-               <div className="text-xs text-gray-800">
-                 <strong className="text-red-600">High Severity:</strong> SQL Injection vulnerability detected on line 42. Use parameterized queries.<br/><br/>
-                 <strong className="text-yellow-600">Performance:</strong> O(N) database lock detected in loop.
+               <div className="font-bold text-blue-300 text-xs mb-1">Autonomous Agent Review</div>
+               <div className="text-xs text-gray-300">
+                 <strong className="text-red-400">High Severity:</strong> SQL Injection vulnerability detected on line 42. Use parameterized queries.<br/><br/>
+                 <strong className="text-yellow-400">Performance:</strong> O(N) database lock detected in loop.
                </div>
             </motion.div>
           )}
@@ -206,7 +206,7 @@ export const PRReviewSimulation = () => {
       <div className="w-1/2 h-full bg-[#1e1e1e] p-4 text-gray-300 flex flex-col text-xs space-y-1 relative overflow-hidden font-mono">
         <div className="text-gray-500 mb-2 border-b border-gray-700 pb-1">FastAPI Gateway & Celery</div>
         
-        {step >= 1 && <motion.div initial={{opacity:0}} animate={{opacity:1}} className="text-green-400">[Webhook] POST /github-event HTTP 202 Accepted</motion.div>}
+        {step >= 1 && <motion.div initial={{opacity:0}} animate={{opacity:1}} className="text-blue-400">[Webhook] POST /github-event HTTP 202 Accepted</motion.div>}
         
         <AnimatePresence>
           {step >= 2 && (
@@ -224,7 +224,7 @@ export const PRReviewSimulation = () => {
           )}
           {step >= 3 && (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-4">
-              <div className="text-emerald-400">[Qdrant] RAG Memory Context Retrieved.</div>
+              <div className="text-blue-400">[Qdrant] RAG Memory Context Retrieved.</div>
               <div className="text-yellow-400 font-bold border border-yellow-700 bg-yellow-900/20 p-1 rounded mt-1">
                 LLM-as-a-Judge: confidence_score=0.95
               </div>
@@ -242,16 +242,16 @@ export const XYRASimulation = () => {
 
   useEffect(() => {
     const sequence = async () => {
-      await new Promise(r => setTimeout(r, 1000)); setStep(1); // Connect & Speak
-      await new Promise(r => setTimeout(r, 2500)); setStep(2); // Tool Trigger & UI slide
-      await new Promise(r => setTimeout(r, 2500)); setStep(3); // Redis Cache hit
-      await new Promise(r => setTimeout(r, 2500)); setStep(4); // Playwright web scrape
+      await new Promise(r => setTimeout(r, 600)); setStep(1); 
+      await new Promise(r => setTimeout(r, 1200)); setStep(2);
+      await new Promise(r => setTimeout(r, 1800)); setStep(3);
+      await new Promise(r => setTimeout(r, 2200)); setStep(4);
     };
     sequence();
   }, []);
 
   return (
-    <div className="w-full h-[400px] bg-[#0a0a0a] rounded-xl overflow-hidden flex font-mono text-sm border border-gray-800 shadow-2xl relative">
+    <div className="w-full h-[340px] bg-[#0a0a0a] rounded-xl overflow-hidden flex font-mono text-sm border border-gray-800 shadow-2xl relative">
       <div className="w-1/2 h-full flex flex-col items-center justify-center border-r border-gray-800 relative bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-900/20 via-black to-black overflow-hidden">
         
         {/* Holographic Globe Placeholder */}
@@ -273,8 +273,8 @@ export const XYRASimulation = () => {
         
         {step >= 1 && (
           <div className="absolute top-4 left-4 flex items-center gap-2">
-            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-green-500 text-xs font-bold">CONNECTED</span>
+            <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+            <span className="text-blue-500 text-xs font-bold">CONNECTED</span>
           </div>
         )}
 
@@ -288,7 +288,7 @@ export const XYRASimulation = () => {
           )}
           {step >= 4 && (
             <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="absolute bottom-4 left-4 bg-white/10 backdrop-blur-md border border-white/20 p-3 rounded-xl w-48 shadow-xl">
-               <div className="text-emerald-300 font-bold mb-1 flex items-center gap-2"><FaSearch size={10}/> OpenAI News</div>
+               <div className="text-blue-300 font-bold mb-1 flex items-center gap-2"><FaSearch size={10}/> OpenAI News</div>
                <div className="text-gray-200 text-xs line-clamp-3">OpenAI just released a new model update focusing on reasoning capabilities and lower latency API endpoints...</div>
             </motion.div>
           )}
@@ -311,9 +311,9 @@ export const XYRASimulation = () => {
             </motion.div>
           )}
           {step >= 3 && step < 4 && (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-4 border border-emerald-800 bg-emerald-900/20 p-2 rounded">
-              <div className="text-emerald-400 font-bold">[Cache HIT] Redis cache HIT for weather in: 'chennai'</div>
-              <div className="text-emerald-500">Latency: 2ms (Bypassed API)</div>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-4 border border-blue-800 bg-blue-900/20 p-2 rounded">
+              <div className="text-blue-400 font-bold">[Cache HIT] Redis cache HIT for weather in: 'chennai'</div>
+              <div className="text-blue-500">Latency: 2ms (Bypassed API)</div>
             </motion.div>
           )}
           {step >= 4 && (

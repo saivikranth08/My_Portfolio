@@ -3,7 +3,7 @@
 import React from 'react';
 import MainLayout from '@/components/layout/MainLayout';
 import {
-  FaCode, FaDatabase, FaTools, FaBrain,
+  FaCode, FaDatabase, FaTools, FaMicrochip,
   FaPython, FaHtml5, FaCss3Alt, FaDocker, FaGithub, 
   FaLaptopCode, FaHeadphones, FaVolumeUp, FaVideo, FaRobot,
   FaLink, FaSitemap, FaSearch, FaBookOpen, FaKeyboard,
@@ -31,7 +31,7 @@ const iconMap: { [key: string]: React.ReactNode } = {
   FaCss3Alt: <FaCss3Alt className="text-blue-500" size={24} />,
 
   // Frameworks & Libraries
-  FaBrain: <FaBrain className="text-purple-500" size={24} />,
+  FaMicrochip: <FaMicrochip className="text-purple-500" size={24} />,
   FaLink: <FaLink className="text-blue-400" size={24} />, // LangChain
   FaSitemap: <FaSitemap className="text-green-500" size={24} />, // LangGraph
   SiHuggingface: <SiHuggingface className="text-yellow-400" size={24} />,
@@ -71,7 +71,7 @@ const getSkillCategories = () => {
     {
       id: 1,
       title: 'AI/GenAI',
-      icon: <FaBrain className="text-4xl text-purple-500 mb-4" />,
+      icon: <FaMicrochip className="text-4xl text-purple-500 mb-4" />,
       skills: skills.aiGenAi || [],
     },
     {

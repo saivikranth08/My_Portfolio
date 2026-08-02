@@ -117,7 +117,7 @@
     "llmMl": [
       { "name": "HuggingFace", "icon": "SiHuggingface" },
       { "name": "Sentence Transformers", "icon": "FaVectorSquare" },
-      { "name": "Embedding Models", "icon": "FaBrain" }
+      { "name": "Embedding Models", "icon": "FaMicrochip" }
     ],
     "toolsDevOps": [
       { "name": "Docker", "icon": "FaDocker" },
@@ -132,6 +132,8 @@
     {
       "id": 1,
       "title": "Multi-Source RAG Assistant",
+      "shortDescription": "A smart document platform that lets you ask questions in plain English to search through complex PDFs, websites, and scanned files.",
+      "simulationType": "rag",
       "description": [
         "Enterprise-grade document intelligence platform enabling natural language queries across complex PDFs, websites, and scanned archives.",
         "Delivering highly accurate, hallucination-free insights leveraging hybrid search architecture and Cohere neural reranking.",
@@ -139,13 +141,24 @@
         "Accelerating enterprise knowledge retrieval and streamlining data analysis workflows for unstructured data."
       ],
       "image": "/images/rag_assistant.png",
-      "technologies": ["LangGraph", "FastAPI", "Streamlit", "Qdrant", "PostgreSQL", "LlamaParse", "Groq", "Cohere Rerank"],
+      "technologies": [
+        "LangGraph",
+        "Cohere Rerank",
+        "PostgreSQL",
+        "Qdrant",
+        "LlamaParse",
+        "FastAPI",
+        "Streamlit",
+        "Groq"
+      ],
       "github": "https://github.com/saivikranth08/Multi-Source-RAG-Assistant",
       "featured": true
     },
     {
       "id": 2,
       "title": "Conversational Text2SQL Assistant",
+      "shortDescription": "An AI database assistant that lets anyone write complex SQL queries just by asking questions in plain English.",
+      "simulationType": "text2sql",
       "description": [
         "Intelligent database interface empowering non-technical stakeholders to translate natural language questions directly into complex SQL analytics.",
         "Enterprise-ready security architecture featuring self-healing query execution and AST layers to block destructive database commands.",
@@ -153,13 +166,24 @@
         "Comprehensive operational visibility and performance monitoring powered by live LangSmith telemetry."
       ],
       "image": "/images/text2sql_assistant.png",
-      "technologies": ["LangGraph", "FastAPI", "Streamlit", "PostgreSQL", "Redis", "SQLAlchemy", "Docker", "Groq"],
+      "technologies": [
+        "PostgreSQL",
+        "SQLAlchemy",
+        "Redis",
+        "LangGraph",
+        "FastAPI",
+        "Streamlit",
+        "Docker",
+        "Groq"
+      ],
       "github": "https://github.com/saivikranth08/Text2SQL",
       "featured": true
     },
     {
       "id": 3,
       "title": "GitHub Autonomous PR Review Agent",
+      "shortDescription": "An automated AI code reviewer that instantly analyzes GitHub pull requests and leaves helpful feedback.",
+      "simulationType": "pr-review",
       "description": [
         "Asynchronous, event-driven PR review pipeline delivering instant automated GitHub analysis and code feedback.",
         "Reducing code review turnaround time by 99% (from hours to seconds) using parallel LangGraph workflows and Redis queuing.",
@@ -167,13 +191,23 @@
         "Highly scalable backend infrastructure containerized with Docker and Nginx, monitored via Celery Flower telemetry."
       ],
       "image": "/images/pr_agent_dashboard.jpg",
-      "technologies": ["FastAPI", "Celery", "LangGraph", "LLaMA 3", "Qdrant", "Redis", "Docker"],
+      "technologies": [
+        "Celery",
+        "GitHub Webhooks",
+        "LLaMA 3",
+        "LangGraph",
+        "FastAPI",
+        "Redis",
+        "Docker"
+      ],
       "github": "https://github.com/saivikranth08",
       "featured": true
     },
     {
       "id": 4,
       "title": "Multi-Threaded WebRTC Voice Agent",
+      "shortDescription": "A super fast AI voice assistant that you can talk to in real-time without any lag, just like a real phone call.",
+      "simulationType": "voice",
       "description": [
         "Ultra-low-latency AI voice companion platform featuring real-time, bidirectional WebRTC streaming for seamless conversational experiences.",
         "Orchestrating LiveKit, Deepgram STT, and LLaMA 3.3 to achieve sub-800ms human-like voice response times.",
@@ -181,7 +215,15 @@
         "Scalable containerized architecture optimized for high-concurrency real-time audio processing workloads."
       ],
       "image": "/images/voice_agent.png",
-      "technologies": ["LiveKit", "Deepgram", "ElevenLabs", "LangGraph", "Playwright", "PostgreSQL", "Redis", "Docker"],
+      "technologies": [
+        "LiveKit WebRTC",
+        "Three.js",
+        "Playwright",
+        "Llama-3 70B",
+        "FastAPI",
+        "Redis",
+        "Docker"
+      ],
       "github": "https://github.com/saivikranth08/Multi-threaded-WebRTC-Voice-Agent--Xyra",
       "featured": true
     }

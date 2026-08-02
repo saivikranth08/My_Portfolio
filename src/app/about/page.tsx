@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import MainLayout from '@/components/layout/MainLayout';
-import { FaGraduationCap, FaLaptopCode, FaEye, FaLightbulb, FaPython, FaHtml5, FaCss3Alt, FaDocker, FaGithub, FaBrain, FaRobot, FaLinkedin, FaBriefcase, FaDatabase } from 'react-icons/fa';
+import { FaGraduationCap, FaLaptopCode, FaEye, FaLightbulb, FaPython, FaHtml5, FaCss3Alt, FaDocker, FaGithub, FaRobot, FaLinkedin, FaBriefcase, FaDatabase, FaLink, FaSitemap, FaChartLine, FaBookOpen } from 'react-icons/fa';
 import { SiPostgresql, SiMysql, SiRedis, SiFastapi, SiHuggingface, SiC, SiStreamlit } from 'react-icons/si';
 import Image from 'next/image';
 import Card3D from '@/components/ui/Card3D';
@@ -53,19 +53,18 @@ const SpotlightWrapper = ({ children, glowColor }: { children: React.ReactNode, 
 
 const marqueeSkills = [
   { name: 'Python', icon: FaPython, color: 'text-blue-500' },
-  { name: 'FastAPI', icon: SiFastapi, color: 'text-emerald-500' },
+  { name: 'LangChain', icon: FaLink, color: 'text-purple-500' },
   { name: 'PostgreSQL', icon: SiPostgresql, color: 'text-blue-600' },
-  { name: 'MySQL', icon: SiMysql, color: 'text-blue-500' },
-  { name: 'LangChain', icon: FaBrain, color: 'text-purple-500' },
-  { name: 'LangGraph', icon: FaBrain, color: 'text-indigo-500' },
-  { name: 'Streamlit', icon: SiStreamlit, color: 'text-red-500' },
-  { name: 'Playwright', icon: FaRobot, color: 'text-emerald-500' },
+  { name: 'FastAPI', icon: SiFastapi, color: 'text-emerald-500' },
+  { name: 'LangGraph', icon: FaSitemap, color: 'text-indigo-500' },
   { name: 'Hugging Face', icon: SiHuggingface, color: 'text-yellow-400' },
   { name: 'Redis', icon: SiRedis, color: 'text-red-500' },
+  { name: 'Playwright', icon: FaRobot, color: 'text-emerald-500' },
   { name: 'Docker', icon: FaDocker, color: 'text-blue-400' },
-  { name: 'SQLAlchemy', icon: FaDatabase, color: 'text-blue-500' },
-  { name: 'Celery', icon: FaLightbulb, color: 'text-yellow-500' },
   { name: 'Qdrant', icon: FaDatabase, color: 'text-indigo-500' },
+  { name: 'LangSmith', icon: FaChartLine, color: 'text-blue-400' },
+  { name: 'Streamlit', icon: SiStreamlit, color: 'text-red-500' },
+  { name: 'RAG', icon: FaBookOpen, color: 'text-indigo-400' },
   { name: 'GitHub', icon: FaGithub, color: 'text-neutral-800 dark:text-white' },
 ];
 
@@ -345,7 +344,7 @@ export default function AboutPage() {
 
           {/* Right Image Column */}
           <div className="order-1 md:order-2 flex justify-center md:justify-center md:items-start h-full perspective-1000">
-            <div className="relative w-72 h-[26rem] md:w-[400px] md:h-[500px] lg:w-[450px] lg:h-[550px] group mt-4 md:mt-0 md:-mr-12">
+            <div className="relative w-72 h-[26rem] md:w-[350px] md:h-[450px] lg:w-[380px] lg:h-[480px] group mt-4 md:mt-0">
               <Image
                 src="/images/Vicky_AI.png"
                 alt="Vikranth's Profile"
